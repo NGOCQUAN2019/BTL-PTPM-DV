@@ -1,0 +1,17 @@
+D:\PTPM - DV\BTL\BLL\bin\Debug\net8.0\BLL.deps.json
+D:\PTPM - DV\BTL\BLL\bin\Debug\net8.0\BLL.dll
+D:\PTPM - DV\BTL\BLL\bin\Debug\net8.0\BLL.pdb
+D:\PTPM - DV\BTL\BLL\bin\Debug\net8.0\DAL.dll
+D:\PTPM - DV\BTL\BLL\bin\Debug\net8.0\Model.dll
+D:\PTPM - DV\BTL\BLL\bin\Debug\net8.0\DAL.pdb
+D:\PTPM - DV\BTL\BLL\bin\Debug\net8.0\Model.pdb
+D:\PTPM - DV\BTL\BLL\obj\Debug\net8.0\BLL.csproj.AssemblyReference.cache
+D:\PTPM - DV\BTL\BLL\obj\Debug\net8.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\PTPM - DV\BTL\BLL\obj\Debug\net8.0\BLL.AssemblyInfoInputs.cache
+D:\PTPM - DV\BTL\BLL\obj\Debug\net8.0\BLL.AssemblyInfo.cs
+D:\PTPM - DV\BTL\BLL\obj\Debug\net8.0\BLL.csproj.CoreCompileInputs.cache
+D:\PTPM - DV\BTL\BLL\obj\Debug\net8.0\BLL.csproj.Up2Date
+D:\PTPM - DV\BTL\BLL\obj\Debug\net8.0\BLL.dll
+D:\PTPM - DV\BTL\BLL\obj\Debug\net8.0\refint\BLL.dll
+D:\PTPM - DV\BTL\BLL\obj\Debug\net8.0\BLL.pdb
+D:\PTPM - DV\BTL\BLL\obj\Debug\net8.0\ref\BLL.dll
