@@ -1,17 +1,14 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using DAL.Interfaces;
+using Dapper;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Model;
+using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 
 namespace DAL
 {
-    // Interface
-    public interface IStudentRepository
-    {
-        bool CreateStudent(StudentModel model);
-    }
-
-    // Class thực thi
     public class StudentRepository : IStudentRepository
     {
         private readonly string _connectionString;
@@ -23,21 +20,50 @@ namespace DAL
 
         public bool CreateStudent(StudentModel model)
         {
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            using (IDbConnection db = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("sp_create_student", conn))
-                {
-                    cmd.CommandType = CommandType.StoredProcedure;
+                var parameters = new { p_student_code = model.StudentCode, p_full_name = model.FullName, p_email = model.Email };
+                db.Execute("sp_create_student", parameters, commandType: CommandType.StoredProcedure);
+                return true;
+            }
+        }
 
-                    // Truyền tham số khớp với Stored Procedure sp_create_student
-                    cmd.Parameters.AddWithValue("@p_student_code", model.StudentCode);
-                    cmd.Parameters.AddWithValue("@p_full_name", model.FullName);
-                    cmd.Parameters.AddWithValue("@p_email", model.Email);
+        public bool UpdateStudent(StudentModel model)
+        {
+            using (IDbConnection db = new SqlConnection(_connectionString))
+            {
+                var parameters = new { p_student_code = model.StudentCode, p_full_name = model.FullName, p_email = model.Email };
+                db.Execute("sp_update_student", parameters, commandType: CommandType.StoredProcedure);
+                return true;
+            }
+        }
 
-                    conn.Open();
-                    int rowsAffected = cmd.ExecuteNonQuery();
-                    return rowsAffected > 0; // Trả về true nếu Insert thành công
-                }
+        public bool DeleteStudent(string studentCode)
+        {
+            using (IDbConnection db = new SqlConnection(_connectionString))
+            {
+                var parameters = new { p_student_code = studentCode };
+                db.Execute("sp_delete_student", parameters, commandType: CommandType.StoredProcedure);
+                return true;
+            }
+        }
+
+        public StudentModel GetStudentById(string studentCode)
+        {
+            using (IDbConnection db = new SqlConnection(_connectionString))
+            {
+                var parameters = new { p_student_code = studentCode };
+                // QueryFirstOrDefault trả về 1 object duy nhất hoặc null nếu không tìm thấy
+                return db.QueryFirstOrDefault<StudentModel>("sp_get_student_by_id", parameters, commandType: CommandType.StoredProcedure);
+            }
+        }
+
+        public List<StudentModel> SearchStudents(string keyword)
+        {
+            using (IDbConnection db = new SqlConnection(_connectionString))
+            {
+                var parameters = new { p_keyword = keyword ?? "" };
+                return db.Query<StudentModel>("sp_search_students", parameters, commandType: CommandType.StoredProcedure).ToList();
             }
         }
     }

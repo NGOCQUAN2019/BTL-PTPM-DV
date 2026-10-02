@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "Dapper/2.1.89": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Bcl.Cryptography/8.0.0": {
         "type": "package",
         "compile": {
@@ -521,6 +534,9 @@
       "Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Dapper": "2.1.89"
+        },
         "compile": {
           "bin/placeholder/Model.dll": {}
         },
@@ -531,6 +547,27 @@
     }
   },
   "libraries": {
+    "Dapper/2.1.89": {
+      "sha512": "1VjFE664wnxvuhlgP8kS4PeFFF4jqD3VkbIHW6Zlc52zuibgcz5ICnIHcQXlTp6pURpPNGLV0ZpNe5x9KePJnA==",
+      "type": "package",
+      "path": "dapper/2.1.89",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.1.89.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net10.0/Dapper.dll",
+        "lib/net10.0/Dapper.xml",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net8.0/Dapper.dll",
+        "lib/net8.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml",
+        "readme.md"
+      ]
+    },
     "Microsoft.Bcl.Cryptography/8.0.0": {
       "sha512": "Y3t/c7C5XHJGFDnohjf1/9SYF3ZOfEU1fkNQuKg/dGf9hN18yrQj2owHITGfNS3+lKJdW6J4vY98jYu57jCO8A==",
       "type": "package",
@@ -1354,6 +1391,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Dapper >= 2.1.89",
       "Microsoft.Data.SqlClient >= 7.1.1",
       "Microsoft.Extensions.Configuration >= 10.0.12",
       "Model >= 1.0.0"
@@ -1366,11 +1404,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PTPM - DV\\BTL\\DAL\\DAL.csproj",
+      "projectUniqueName": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "D:\\PTPM - DV\\BTL\\DAL\\DAL.csproj",
+      "projectPath": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\PTPM - DV\\BTL\\DAL\\obj\\",
+      "outputPath": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1392,8 +1430,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\PTPM - DV\\BTL\\Model\\Model.csproj": {
-              "projectPath": "D:\\PTPM - DV\\BTL\\Model\\Model.csproj"
+            "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\Model.csproj": {
+              "projectPath": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\Model.csproj"
             }
           }
         }
@@ -1414,6 +1452,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.1.89, )"
+          },
           "Microsoft.Data.SqlClient": {
             "target": "Package",
             "version": "[7.1.1, )"

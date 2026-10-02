@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LrV9fA9QlBg=",
+  "dgSpecHash": "mPBAWesSnsM=",
   "success": true,
-  "projectFilePath": "D:\\PTPM - DV\\BTL\\BLL\\BLL.csproj",
+  "projectFilePath": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\dapper\\2.1.89\\dapper.2.1.89.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.bcl.cryptography\\8.0.0\\microsoft.bcl.cryptography.8.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.data.sqlclient\\7.1.1\\microsoft.data.sqlclient.7.1.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.data.sqlclient.extensions.abstractions\\7.1.1\\microsoft.data.sqlclient.extensions.abstractions.7.1.1.nupkg.sha512",

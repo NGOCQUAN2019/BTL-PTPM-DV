@@ -8,8 +8,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Đăng ký DI cho DAL và BLL
-builder.Services.AddScoped<DAL.IStudentRepository, DAL.StudentRepository>();
-builder.Services.AddScoped<BLL.IStudentBusiness, BLL.StudentBusiness>();
+builder.Services.AddScoped<DAL.Interfaces.IStudentRepository, DAL.StudentRepository>();
+builder.Services.AddScoped<BLL.Interfaces.IStudentBusiness, BLL.StudentBusiness>();
 
 var app = builder.Build();
 

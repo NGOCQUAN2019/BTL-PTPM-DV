@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PTPM - DV\\BTL\\DAL\\DAL.csproj": {}
+    "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "D:\\PTPM - DV\\BTL\\DAL\\DAL.csproj": {
+    "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PTPM - DV\\BTL\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\PTPM - DV\\BTL\\DAL\\DAL.csproj",
+        "projectPath": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\PTPM - DV\\BTL\\DAL\\obj\\",
+        "outputPath": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\PTPM - DV\\BTL\\Model\\Model.csproj": {
-                "projectPath": "D:\\PTPM - DV\\BTL\\Model\\Model.csproj"
+              "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\Model.csproj": {
+                "projectPath": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\Model.csproj"
               }
             }
           }
@@ -55,6 +55,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.89, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[7.1.1, )"
@@ -84,14 +88,14 @@
         }
       }
     },
-    "D:\\PTPM - DV\\BTL\\Model\\Model.csproj": {
+    "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PTPM - DV\\BTL\\Model\\Model.csproj",
+        "projectUniqueName": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "D:\\PTPM - DV\\BTL\\Model\\Model.csproj",
+        "projectPath": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\PTPM - DV\\BTL\\Model\\obj\\",
+        "outputPath": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -130,6 +134,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.89, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

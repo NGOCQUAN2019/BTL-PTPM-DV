@@ -16,6 +16,14 @@
           "API.dll": {}
         }
       },
+      "Dapper/2.1.89": {
+        "runtime": {
+          "lib/net8.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.89.60231"
+          }
+        }
+      },
       "Microsoft.Bcl.Cryptography/8.0.0": {
         "runtime": {
           "lib/net8.0/Microsoft.Bcl.Cryptography.dll": {
@@ -408,6 +416,7 @@
       "BLL/1.0.0": {
         "dependencies": {
           "DAL": "1.0.0",
+          "Dapper": "2.1.89",
           "Model": "1.0.0"
         },
         "runtime": {
@@ -419,6 +428,7 @@
       },
       "DAL/1.0.0": {
         "dependencies": {
+          "Dapper": "2.1.89",
           "Microsoft.Data.SqlClient": "7.1.1",
           "Microsoft.Extensions.Configuration": "10.0.12",
           "Model": "1.0.0"
@@ -431,6 +441,9 @@
         }
       },
       "Model/1.0.0": {
+        "dependencies": {
+          "Dapper": "2.1.89"
+        },
         "runtime": {
           "Model.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -445,6 +458,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Dapper/2.1.89": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1VjFE664wnxvuhlgP8kS4PeFFF4jqD3VkbIHW6Zlc52zuibgcz5ICnIHcQXlTp6pURpPNGLV0ZpNe5x9KePJnA==",
+      "path": "dapper/2.1.89",
+      "hashPath": "dapper.2.1.89.nupkg.sha512"
     },
     "Microsoft.Bcl.Cryptography/8.0.0": {
       "type": "package",

@@ -1,16 +1,10 @@
-﻿using DAL;
+﻿using BLL.Interfaces;
+using DAL.Interfaces;
 using Model;
-using System;
+using System.Collections.Generic;
 
 namespace BLL
 {
-    // Interface
-    public interface IStudentBusiness
-    {
-        bool CreateStudent(StudentModel model);
-    }
-
-    // Class thực thi
     public class StudentBusiness : IStudentBusiness
     {
         private readonly IStudentRepository _studentRepository;
@@ -22,14 +16,27 @@ namespace BLL
 
         public bool CreateStudent(StudentModel model)
         {
-            // Kiểm tra tính hợp lệ của dữ liệu trước khi gọi DAL
-            if (string.IsNullOrWhiteSpace(model.StudentCode))
-                throw new Exception("Mã học viên không được để trống!");
-
-            if (string.IsNullOrWhiteSpace(model.FullName))
-                throw new Exception("Họ tên không được để trống!");
-
             return _studentRepository.CreateStudent(model);
+        }
+
+        public bool UpdateStudent(StudentModel model)
+        {
+            return _studentRepository.UpdateStudent(model);
+        }
+
+        public bool DeleteStudent(string studentCode)
+        {
+            return _studentRepository.DeleteStudent(studentCode);
+        }
+
+        public StudentModel GetStudentById(string studentCode)
+        {
+            return _studentRepository.GetStudentById(studentCode);
+        }
+
+        public List<StudentModel> SearchStudents(string keyword)
+        {
+            return _studentRepository.SearchStudents(keyword);
         }
     }
 }

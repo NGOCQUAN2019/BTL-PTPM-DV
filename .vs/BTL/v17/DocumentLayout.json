@@ -1,0 +1,151 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API.csproj|solutionrelative:btl\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\dal\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|solutionrelative:dal\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\dal\\interfaces\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API.csproj|solutionrelative:btl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\bll\\studentbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|solutionrelative:bll\\studentbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API.csproj|solutionrelative:btl\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\bll\\interfaces\\istudentbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\istudentbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IStudentBusiness.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IStudentBusiness.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\IStudentBusiness.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IStudentBusiness.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\IStudentBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T03:34:22.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Program.cs",
+              "RelativeDocumentMoniker": "BTL\\Program.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Program.cs",
+              "RelativeToolTip": "BTL\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T02:27:40.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IStudentRepository.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IStudentRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IStudentRepository.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IStudentRepository.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IStudentRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T02:17:09.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentBusiness.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\StudentBusiness.cs",
+              "RelativeDocumentMoniker": "BLL\\StudentBusiness.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\StudentBusiness.cs",
+              "RelativeToolTip": "BLL\\StudentBusiness.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T02:13:11.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\StudentRepository.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\StudentRepository.cs",
+              "RelativeToolTip": "DAL\\StudentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T01:32:10.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "BTL\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "BTL\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwFwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T01:38:50.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "API",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\API.csproj",
+              "RelativeDocumentMoniker": "BTL\\API.csproj",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\API.csproj",
+              "RelativeToolTip": "BTL\\API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-01T04:35:49.808Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
