@@ -1,12 +1,27 @@
-﻿using System;
+﻿using BLL.Interfaces;
+using DAL.Interfaces;
+using Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BLL
 {
-    internal class TeacherBusiness
+    public class TeacherBusiness : ITeacherBusiness
     {
+        private readonly ITeacherRepository _teacherRepository;
+
+        public TeacherBusiness(ITeacherRepository teacherRepository)
+        {
+            _teacherRepository = teacherRepository;
+        }
+
+        public bool CreateTeacher(TeacherModel model)
+        {
+            return _teacherRepository.CreateTeacher(model);
+        }
+
+        public List<TeacherModel> SearchTeachers(string keyword)
+        {
+            return _teacherRepository.SearchTeachers(keyword);
+        }
     }
 }

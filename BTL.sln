@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.37628.2 d17.14
+VisualStudioVersion = 17.14.37628.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "BTL\API.csproj", "{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API Admin", "BTL\API Admin.csproj", "{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{6A232A7B-830E-403D-AC37-727A8084B293}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{A03F567A-1548-4F49-A8F4-FD8132A11DEF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{BB7BDB9F-FAAD-45D5-9E3F-6EB7E3D7982B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API User", "API User\API User.csproj", "{206AF1F0-72FC-4404-A66D-F70C566B78CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BB7BDB9F-FAAD-45D5-9E3F-6EB7E3D7982B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB7BDB9F-FAAD-45D5-9E3F-6EB7E3D7982B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB7BDB9F-FAAD-45D5-9E3F-6EB7E3D7982B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{206AF1F0-72FC-4404-A66D-F70C566B78CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206AF1F0-72FC-4404-A66D-F70C566B78CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206AF1F0-72FC-4404-A66D-F70C566B78CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206AF1F0-72FC-4404-A66D-F70C566B78CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

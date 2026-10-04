@@ -1,4 +1,4 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
@@ -7,7 +7,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Đăng ký DI cho DAL và BLL
 builder.Services.AddScoped<DAL.Interfaces.IStudentRepository, DAL.StudentRepository>();
 builder.Services.AddScoped<BLL.Interfaces.IStudentBusiness, BLL.StudentBusiness>();
 
