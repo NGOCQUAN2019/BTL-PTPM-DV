@@ -1,4 +1,9 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using BLL;
+using BLL.Interfaces;
+using DAL;
+using DAL.Interfaces;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
@@ -8,11 +13,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Đăng ký DI cho DAL và BLL
-builder.Services.AddScoped<DAL.Interfaces.IStudentRepository, DAL.StudentRepository>();
-builder.Services.AddScoped<BLL.Interfaces.IStudentBusiness, BLL.StudentBusiness>();
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddScoped<IStudentBusiness, StudentBusiness>();
 
-builder.Services.AddScoped<DAL.Interfaces.ITeacherRepository, DAL.TeacherRepository>();
-builder.Services.AddScoped<BLL.Interfaces.ITeacherBusiness, BLL.TeacherBusiness>();
+builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
+builder.Services.AddScoped<ITeacherBusiness, TeacherBusiness>();
+
+// Đăng ký bổ sung cho luồng Login
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserBusiness, UserBusiness>();
 
 var app = builder.Build();
 
