@@ -6,10 +6,10 @@ using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Model; // Chứa AuthenticateModel và LoggedInUser
-using BLL.Interfaces; // Chứa IUserBusiness
+using Model;
+using BLL.Interfaces;
 
-namespace API_Admin.Controllers // Hoặc namespace tương ứng của bạn
+namespace API_Admin.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -28,7 +28,11 @@ namespace API_Admin.Controllers // Hoặc namespace tương ứng của bạn
         {
             var user = _userBusiness.ValidateUser(request.Username, request.Password);
 
-            if (user == null) return Unauthorized(new { message = "Sai tài khoản hoặc mật khẩu!" });
+            // Gom chung lỗi sai thông tin và sai quyền hạn bằng 1 câu thông báo chuyên nghiệp
+            if (user == null || user.Role != "admin")
+            {
+                return Unauthorized(new { message = "Sai tài khoản, mật khẩu hoặc bạn không có quyền truy cập!" });
+            }
 
             var token = GenerateJwtToken(user, config);
             return Ok(new { token = token, role = user.Role, message = "Đăng nhập thành công" });

@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,6 +13,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{BB7BDB9F-FAAD-45D5-9E3F-6EB7E3D7982B}|Model\\Model.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\model\\authenticatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB7BDB9F-FAAD-45D5-9E3F-6EB7E3D7982B}|Model\\Model.csproj|solutionrelative:model\\authenticatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\api user\\controllers\\ucoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -111,10 +115,6 @@
       "RelativeMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\istudentbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -147,45 +147,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "BTL\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\UserController.cs",
-              "RelativeToolTip": "BTL\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-05T14:34:03.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserBusiness.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\UserBusiness.cs",
-              "RelativeDocumentMoniker": "BLL\\UserBusiness.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\UserBusiness.cs",
-              "RelativeToolTip": "BLL\\UserBusiness.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-05T14:32:43.356Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\UserRepository.cs",
               "RelativeDocumentMoniker": "DAL\\UserRepository.cs",
               "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\UserRepository.cs",
               "RelativeToolTip": "DAL\\UserRepository.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwCkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-05T14:31:40.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IUserBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IUserBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\IUserBusiness.cs",
@@ -193,12 +167,11 @@
               "RelativeToolTip": "BLL\\Interfaces\\IUserBusiness.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-05T03:48:41.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-05T03:48:41.813Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UCourseController.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\UCourseController.cs",
               "RelativeDocumentMoniker": "API User\\Controllers\\UCourseController.cs",
@@ -206,12 +179,11 @@
               "RelativeToolTip": "API User\\Controllers\\UCourseController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-04T15:25:21.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-04T15:25:21.908Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "AuthenticateModel.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\AuthenticateModel.cs",
               "RelativeDocumentMoniker": "Model\\AuthenticateModel.cs",
@@ -224,20 +196,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Program.cs",
               "RelativeDocumentMoniker": "BTL\\Program.cs",
               "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Program.cs",
               "RelativeToolTip": "BTL\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-22T02:27:40.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\appsettings.json",
+              "RelativeDocumentMoniker": "BTL\\appsettings.json",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\appsettings.json",
+              "RelativeToolTip": "BTL\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-04T15:13:46.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "BTL\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\UserController.cs*",
+              "RelativeToolTip": "BTL\\Controllers\\UserController.cs*",
+              "ViewState": "AgIAABMAAAAAAAAAAAA1wCYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T14:34:03.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "UserBusiness.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\UserBusiness.cs",
+              "RelativeDocumentMoniker": "BLL\\UserBusiness.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\UserBusiness.cs",
+              "RelativeToolTip": "BLL\\UserBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T14:32:43.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interfaces\\IUserRepository.cs",
@@ -245,12 +254,11 @@
               "RelativeToolTip": "DAL\\Interfaces\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-05T14:45:10.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-05T14:45:10.113Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "GradeController.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\GradeController.cs",
               "RelativeDocumentMoniker": "API User\\Controllers\\GradeController.cs",
@@ -258,12 +266,11 @@
               "RelativeToolTip": "API User\\Controllers\\GradeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-05T03:43:26.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-05T03:43:26.456Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "EnrollmentController.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\EnrollmentController.cs",
               "RelativeDocumentMoniker": "API User\\Controllers\\EnrollmentController.cs",
@@ -271,12 +278,11 @@
               "RelativeToolTip": "API User\\Controllers\\EnrollmentController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-05T03:43:19.193Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-05T03:43:19.193Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "CertificateController.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\CertificateController.cs",
               "RelativeDocumentMoniker": "API User\\Controllers\\CertificateController.cs",
@@ -284,12 +290,11 @@
               "RelativeToolTip": "API User\\Controllers\\CertificateController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-05T03:43:08.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-05T03:43:08.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "UClassController.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\UClassController.cs",
               "RelativeDocumentMoniker": "API User\\Controllers\\UClassController.cs",
@@ -297,12 +302,11 @@
               "RelativeToolTip": "API User\\Controllers\\UClassController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-04T15:25:08.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-04T15:25:08.22Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": ".gitignore",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
@@ -314,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "AttendanceController.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\AttendanceController.cs",
               "RelativeDocumentMoniker": "API User\\Controllers\\AttendanceController.cs",
@@ -322,12 +326,11 @@
               "RelativeToolTip": "API User\\Controllers\\AttendanceController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-04T15:17:41.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-04T15:17:41.549Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Program.cs",
               "RelativeDocumentMoniker": "API User\\Program.cs",
@@ -339,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\appsettings.json",
               "RelativeDocumentMoniker": "API User\\appsettings.json",
@@ -351,19 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\appsettings.json",
-              "RelativeDocumentMoniker": "BTL\\appsettings.json",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\appsettings.json",
-              "RelativeToolTip": "BTL\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-04T15:13:46.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "StudentController.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "BTL\\Controllers\\StudentController.cs",
@@ -375,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "TeacherBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\TeacherBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\TeacherBusiness.cs",
@@ -387,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "ITeacherBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\ITeacherBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\ITeacherBusiness.cs",
@@ -399,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "TeacherRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\TeacherRepository.cs",
               "RelativeDocumentMoniker": "DAL\\TeacherRepository.cs",
@@ -423,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "ITeacherRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\ITeacherRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interfaces\\ITeacherRepository.cs",
@@ -435,7 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "TeacherModel.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\TeacherModel.cs",
               "RelativeDocumentMoniker": "Model\\TeacherModel.cs",
@@ -447,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "IStudentBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IStudentBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\IStudentBusiness.cs",
@@ -459,7 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "IStudentRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IStudentRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interfaces\\IStudentRepository.cs",
@@ -471,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "StudentBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\StudentBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\StudentBusiness.cs",
@@ -483,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "StudentRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\StudentRepository.cs",
               "RelativeDocumentMoniker": "DAL\\StudentRepository.cs",
@@ -495,7 +486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "API Admin.csproj",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\API Admin.csproj",
               "RelativeDocumentMoniker": "BTL\\API Admin.csproj",
