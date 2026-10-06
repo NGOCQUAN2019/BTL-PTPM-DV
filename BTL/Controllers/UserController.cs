@@ -15,21 +15,17 @@ namespace API_Admin.Controllers // Hoặc namespace tương ứng của bạn
     [ApiController]
     public class UserController : ControllerBase
     {
-        // 1. Khai báo biến _userBusiness
         private readonly IUserBusiness _userBusiness;
 
-        // 2. Hàm khởi tạo (Constructor) để tiêm IUserBusiness vào Controller
         public UserController(IUserBusiness userBusiness)
         {
             _userBusiness = userBusiness;
         }
 
-        // 3. Hàm Login của bạn
         [AllowAnonymous]
         [HttpPost("login")]
         public IActionResult Login([FromBody] AuthenticateModel request, [FromServices] IConfiguration config)
         {
-            // Lúc này biến _userBusiness đã tồn tại và sẵn sàng gọi xuống BLL
             var user = _userBusiness.ValidateUser(request.Username, request.Password);
 
             if (user == null) return Unauthorized(new { message = "Sai tài khoản hoặc mật khẩu!" });
@@ -38,7 +34,6 @@ namespace API_Admin.Controllers // Hoặc namespace tương ứng của bạn
             return Ok(new { token = token, role = user.Role, message = "Đăng nhập thành công" });
         }
 
-        // 4. Hàm GenerateJwtToken
         private string GenerateJwtToken(LoggedInUser user, IConfiguration config)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["Jwt:Key"]));
