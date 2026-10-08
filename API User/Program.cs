@@ -7,11 +7,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<DAL.Interfaces.IStudentRepository, DAL.StudentRepository>();
-builder.Services.AddScoped<BLL.Interfaces.IStudentBusiness, BLL.StudentBusiness>();
+builder.Services.AddScoped<DAL.Interfaces.IHocVienRepository, DAL.HocVienRepository>();
+builder.Services.AddScoped<BLL.Interfaces.IHocVienBusiness, BLL.HocVienBusiness>();
 
-builder.Services.AddScoped<DAL.Interfaces.ITeacherRepository, DAL.TeacherRepository>();
-builder.Services.AddScoped<BLL.Interfaces.ITeacherBusiness, BLL.TeacherBusiness>();
+builder.Services.AddScoped<DAL.Interfaces.IGiaoVienRepository, DAL.GiaoVienRepository>();
+builder.Services.AddScoped<BLL.Interfaces.IGiaoVienBusiness, BLL.GiaoVienBusiness>();
 
 var app = builder.Build();
 

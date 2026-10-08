@@ -4,6 +4,7 @@ using DAL;
 using DAL.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,33 +17,19 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Đăng ký DI cho DAL và BLL
-builder.Services.AddScoped<IStudentRepository, StudentRepository>();
-builder.Services.AddScoped<IStudentBusiness, StudentBusiness>();
+builder.Services.AddScoped<IHocVienRepository, HocVienRepository>();
+builder.Services.AddScoped<IHocVienBusiness, HocVienBusiness>();
 
-builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
-builder.Services.AddScoped<ITeacherBusiness, TeacherBusiness>();
+builder.Services.AddScoped<IGiaoVienRepository, GiaoVienRepository>();
+builder.Services.AddScoped<IGiaoVienBusiness, GiaoVienBusiness>();
 
-// Đăng ký bổ sung cho luồng Login
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IUserBusiness, UserBusiness>();
 
-builder.Services.AddScoped<ICourseRepository,CourseRepository >();
-builder.Services.AddScoped<ICourseBusiness, CourseBusiness>();
+builder.Services.AddScoped<IKhoaHocRepository,KhoaHocRepository >();
+builder.Services.AddScoped<IKhoaHocBusiness, KhoaHocBusiness>();
 
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Jwt:Issuer"],
-            ValidAudience = builder.Configuration["Jwt:Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-        };
-    });
+builder.Services.AddScoped<ILopHocRepository, LopHocRepository>();
+builder.Services.AddScoped<ILopHocBusiness, LopHocBusiness>();
+    
 
 var app = builder.Build();
 

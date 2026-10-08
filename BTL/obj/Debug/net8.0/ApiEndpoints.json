@@ -1,24 +1,98 @@
 [
   {
-    "ContainingType": "API.Controllers.StudentController",
-    "Method": "CreateStudent",
-    "RelativePath": "api/Student/create",
+    "ContainingType": "API.Controllers.GiaoVienController",
+    "Method": "Create",
+    "RelativePath": "api/GiaoVien/create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "model",
-        "Type": "Model.StudentModel",
+        "Type": "Model.GiaoVienModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.StudentController",
+    "ContainingType": "API.Controllers.GiaoVienController",
+    "Method": "Delete",
+    "RelativePath": "api/GiaoVien/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.GiaoVienController",
+    "Method": "GetAll",
+    "RelativePath": "api/GiaoVien/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.GiaoVienController",
+    "Method": "GetById",
+    "RelativePath": "api/GiaoVien/get-by-id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.GiaoVienController",
+    "Method": "Update",
+    "RelativePath": "api/GiaoVien/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Model.GiaoVienModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.HocVienController",
+    "Method": "CreateStudent",
+    "RelativePath": "api/HocVien/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Model.HocVienModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.HocVienController",
     "Method": "DeleteStudent",
-    "RelativePath": "api/Student/delete/{studentCode}",
+    "RelativePath": "api/HocVien/delete/{studentCode}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -32,9 +106,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.StudentController",
+    "ContainingType": "API.Controllers.HocVienController",
     "Method": "GetStudentById",
-    "RelativePath": "api/Student/get-by-id/{studentCode}",
+    "RelativePath": "api/HocVien/get-by-id/{studentCode}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -48,9 +122,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.StudentController",
+    "ContainingType": "API.Controllers.HocVienController",
     "Method": "SearchStudents",
-    "RelativePath": "api/Student/search",
+    "RelativePath": "api/HocVien/search",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -64,64 +138,206 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.StudentController",
+    "ContainingType": "API.Controllers.HocVienController",
     "Method": "UpdateStudent",
-    "RelativePath": "api/Student/update",
+    "RelativePath": "api/HocVien/update",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "model",
-        "Type": "Model.StudentModel",
+        "Type": "Model.HocVienModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.TeacherController",
-    "Method": "CreateTeacher",
-    "RelativePath": "api/Teacher/create",
+    "ContainingType": "API_Admin.Controllers.KhoaHocController",
+    "Method": "Create",
+    "RelativePath": "api/KhoaHoc/create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "model",
-        "Type": "Model.TeacherModel",
+        "Type": "Model.KhoaHocModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.TeacherController",
-    "Method": "SearchTeachers",
-    "RelativePath": "api/Teacher/search",
-    "HttpMethod": "GET",
+    "ContainingType": "API_Admin.Controllers.KhoaHocController",
+    "Method": "Delete",
+    "RelativePath": "api/KhoaHoc/delete/{id}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "keyword",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API_Admin.Controllers.UserController",
-    "Method": "Login",
-    "RelativePath": "api/User/login",
+    "ContainingType": "API_Admin.Controllers.KhoaHocController",
+    "Method": "GetAll",
+    "RelativePath": "api/KhoaHoc/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.KhoaHocController",
+    "Method": "GetById",
+    "RelativePath": "api/KhoaHoc/get-by-id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.KhoaHocController",
+    "Method": "Update",
+    "RelativePath": "api/KhoaHoc/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Model.KhoaHocModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.LopHocController",
+    "Method": "Create",
+    "RelativePath": "api/LopHoc/create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "Model.AuthenticateModel",
+        "Name": "model",
+        "Type": "Model.LopHocModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.LopHocController",
+    "Method": "Delete",
+    "RelativePath": "api/LopHoc/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.LopHocController",
+    "Method": "GetAll",
+    "RelativePath": "api/LopHoc/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.LopHocController",
+    "Method": "GetById",
+    "RelativePath": "api/LopHoc/get-by-id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.LopHocController",
+    "Method": "Update",
+    "RelativePath": "api/LopHoc/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Model.LopHocModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Ocelot.Configuration.FileConfigurationController",
+    "Method": "Get",
+    "RelativePath": "configuration",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Ocelot.Configuration.FileConfigurationController",
+    "Method": "Post",
+    "RelativePath": "configuration",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileConfiguration",
+        "Type": "Ocelot.Configuration.File.FileConfiguration",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Ocelot.Cache.OutputCacheController",
+    "Method": "Delete",
+    "RelativePath": "outputcache/{region}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "region",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
