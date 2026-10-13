@@ -7,7 +7,8 @@ namespace API_Admin.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "admin")]
+    // SỬA: Đổi "admin" thành "QuanTri"
+    [Authorize(Roles = "QuanTri")]
     public class LopHocController : ControllerBase
     {
         private readonly ILopHocBusiness _classBusiness;
@@ -36,7 +37,8 @@ namespace API_Admin.Controllers
         {
             if (_classBusiness.Create(model))
                 return Ok(new { message = "Thêm lớp học thành công!" });
-            return BadRequest(new { message = "Thêm thất bại! Vui lòng kiểm tra lại CourseId và TeacherId có tồn tại hay không." });
+            // SỬA: Đổi CourseId, TeacherId thành KhoaHocId, GiaoVienId cho khớp với Model mới
+            return BadRequest(new { message = "Thêm thất bại! Vui lòng kiểm tra lại KhoaHocId và GiaoVienId có tồn tại hay không." });
         }
 
         [HttpPut("update")]

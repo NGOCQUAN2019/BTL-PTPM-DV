@@ -21,12 +21,11 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                string sql = @"SELECT id AS Id, class_code AS ClassCode, course_id AS CourseId, 
-                                      teacher_id AS TeacherId, room AS Room, weekdays AS Weekdays, 
-                                      start_time AS StartTime, end_time AS EndTime, 
-                                      start_date AS StartDate, end_date AS EndDate, 
-                                      max_students AS MaxStudents, status AS Status 
-                               FROM classes";
+                // Tên cột đã giống hệt tên Property trong Model nên truy vấn rất ngắn gọn
+                string sql = @"SELECT Id, MaLopHoc, KhoaHocId, GiaoVienId, PhongHoc, LichHoc, 
+                                      GioBatDau, GioKetThuc, NgayBatDau, NgayKetThuc, 
+                                      SiSoToiDa, TrangThai 
+                               FROM LopHoc";
                 return db.Query<LopHocModel>(sql);
             }
         }
@@ -35,12 +34,10 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                string sql = @"SELECT id AS Id, class_code AS ClassCode, course_id AS CourseId, 
-                                      teacher_id AS TeacherId, room AS Room, weekdays AS Weekdays, 
-                                      start_time AS StartTime, end_time AS EndTime, 
-                                      start_date AS StartDate, end_date AS EndDate, 
-                                      max_students AS MaxStudents, status AS Status 
-                               FROM classes WHERE id = @Id";
+                string sql = @"SELECT Id, MaLopHoc, KhoaHocId, GiaoVienId, PhongHoc, LichHoc, 
+                                      GioBatDau, GioKetThuc, NgayBatDau, NgayKetThuc, 
+                                      SiSoToiDa, TrangThai 
+                               FROM LopHoc WHERE Id = @Id";
                 return db.QueryFirstOrDefault<LopHocModel>(sql, new { Id = id });
             }
         }
@@ -49,8 +46,8 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                string sql = @"INSERT INTO classes (class_code, course_id, teacher_id, room, weekdays, start_time, end_time, start_date, end_date, max_students, status) 
-                               VALUES (@ClassCode, @CourseId, @TeacherId, @Room, @Weekdays, @StartTime, @EndTime, @StartDate, @EndDate, @MaxStudents, @Status)";
+                string sql = @"INSERT INTO LopHoc (MaLopHoc, KhoaHocId, GiaoVienId, PhongHoc, LichHoc, GioBatDau, GioKetThuc, NgayBatDau, NgayKetThuc, SiSoToiDa, TrangThai) 
+                               VALUES (@MaLopHoc, @KhoaHocId, @GiaoVienId, @PhongHoc, @LichHoc, @GioBatDau, @GioKetThuc, @NgayBatDau, @NgayKetThuc, @SiSoToiDa, @TrangThai)";
                 return db.Execute(sql, model) > 0;
             }
         }
@@ -59,12 +56,17 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                string sql = @"UPDATE classes 
-                               SET class_code = @ClassCode, course_id = @CourseId, teacher_id = @TeacherId, 
-                                   room = @Room, weekdays = @Weekdays, start_time = @StartTime, 
-                                   end_time = @EndTime, start_date = @StartDate, end_date = @EndDate, 
-                                   max_students = @MaxStudents, status = @Status 
-                               WHERE id = @Id";
+                string sql = @"UPDATE LopHoc 
+                               SET MaLopHoc = @MaLopHoc, KhoaHocId = @KhoaHocId, GiaoVienId = @GiaoVienId, 
+                                   PhongHoc = @PhongHoc, LichHoc = @LichHoc, GioBatDau = @GioBatDau, 
+                                   GioKetThuc = @GioKetThuc, NgayBatDau = @NgayBatDau, end_date = @NgayKetThuc, 
+                                   SiSoToiDa = @SiSoToiDa, TrangThai = @TrangThai 
+                               WHERE Id = @Id";
+                // Lưu ý nhỏ: Chữ 'end_date' ở code cũ đã được tôi sửa thành 'NgayKetThuc' trong đoạn SQL trên cho đồng bộ.
+
+                // Đảm bảo sửa triệt để chỗ end_date bị sót lại:
+                sql = sql.Replace("end_date = @NgayKetThuc", "NgayKetThuc = @NgayKetThuc");
+
                 return db.Execute(sql, model) > 0;
             }
         }
@@ -73,7 +75,8 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                return db.Execute("DELETE FROM classes WHERE id = @Id", new { Id = id }) > 0;
+                // Thay 'classes' thành 'LopHoc'
+                return db.Execute("DELETE FROM LopHoc WHERE Id = @Id", new { Id = id }) > 0;
             }
         }
     }

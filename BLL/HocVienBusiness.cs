@@ -24,19 +24,19 @@ namespace BLL
             return _studentRepository.UpdateStudent(model);
         }
 
-        public bool DeleteStudent(string studentCode)
+        public bool DeleteStudent(string maHocVien)
         {
-            return _studentRepository.DeleteStudent(studentCode);
+            return _studentRepository.DeleteStudent(maHocVien);
         }
 
-        public HocVienModel GetStudentById(string studentCode)
+        public HocVienModel GetStudentById(string maHocVien)
         {
-            return _studentRepository.GetStudentById(studentCode);
+            return _studentRepository.GetStudentById(maHocVien);
         }
 
-        public List<HocVienModel> SearchStudents(string keyword)
+        public List<HocVienModel> SearchStudents(string tuKhoa)
         {
-            return _studentRepository.SearchStudents(keyword);
+            return _studentRepository.SearchStudents(tuKhoa);
         }
     }
 }

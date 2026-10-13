@@ -9,13 +9,12 @@ namespace Model
     public class KhoaHocModel
     {
         public int Id { get; set; }
-        public string Code { get; set; }
-        public string Name { get; set; }
-        public string Level { get; set; }
-        public int DurationHours { get; set; }
-        public decimal TuitionFee { get; set; }
-        public bool RequiresPlacement { get; set; }
-        public decimal PassScore { get; set; }
-        public decimal MinAttendancePct { get; set; }
+        public string MaKhoaHoc { get; set; }
+        public string TenKhoaHoc { get; set; }
+        public string CapDo { get; set; }
+        public int ThoiLuongGio { get; set; }
+        public decimal HocPhi { get; set; }
+        public bool YeuCauThiDauVao { get; set; }
+        public decimal DiemDat { get; set; }
     }
 }

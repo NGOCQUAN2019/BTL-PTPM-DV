@@ -8,8 +8,11 @@ namespace Model
 {
     public class HocVienModel
     {
-        public string StudentCode { get; set; }
-        public string FullName { get; set; }
+        public int Id { get; set; }
+        public int? NguoiDungId { get; set; }
+        public string MaHocVien { get; set; }
+        public string HoTen { get; set; }
+        public string GioiTinh { get; set; }
         public string Email { get; set; }
     }
 }

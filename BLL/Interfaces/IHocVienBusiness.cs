@@ -11,8 +11,11 @@ namespace BLL.Interfaces
     {
         bool CreateStudent(HocVienModel model);
         bool UpdateStudent(HocVienModel model);
-        bool DeleteStudent(string studentCode);
-        HocVienModel GetStudentById(string studentCode);
-        List<HocVienModel> SearchStudents(string keyword);
+        // Đổi studentCode thành maHocVien
+        bool DeleteStudent(string maHocVien);
+        // Đổi studentCode thành maHocVien
+        HocVienModel GetStudentById(string maHocVien);
+        // Đổi keyword thành tuKhoa
+        List<HocVienModel> SearchStudents(string tuKhoa);
     }
 }

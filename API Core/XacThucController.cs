@@ -9,9 +9,9 @@ using System.Text;
 using Model;
 using BLL.Interfaces;
 
-namespace API_Core.Controllers // Đã đổi thành API_Core
+namespace API_Core.Controllers
 {
-    [Route("api/xac-thuc")] // Đổi route tiếng Việt cho đẹp
+    [Route("api/xac-thuc")]
     [ApiController]
     public class XacThucController : ControllerBase
     {
@@ -26,9 +26,8 @@ namespace API_Core.Controllers // Đã đổi thành API_Core
         [HttpPost("login")]
         public IActionResult Login([FromBody] AuthenticateModel request, [FromServices] IConfiguration config)
         {
-            var user = _userBusiness.ValidateUser(request.Username, request.Password);
+            var user = _userBusiness.ValidateUser(request.TenDangNhap, request.MatKhau);
 
-            // Bỏ kiểm tra Role, chỉ kiểm tra xem tài khoản/mật khẩu có đúng không
             if (user == null)
             {
                 return Unauthorized(new { message = "Sai thông tin đăng nhập hoặc tài khoản không tồn tại!" });
@@ -36,8 +35,7 @@ namespace API_Core.Controllers // Đã đổi thành API_Core
 
             var token = GenerateJwtToken(user, config);
 
-            // Trả về cả token và role để phía Front-end (React/Vue/Angular) biết đường điều hướng trang web
-            return Ok(new { token = token, role = user.Role, message = "Đăng nhập thành công" });
+            return Ok(new { token = token, role = user.VaiTro, message = "Đăng nhập thành công" });
         }
 
         private string GenerateJwtToken(LoggedInUser user, IConfiguration config)
@@ -48,8 +46,8 @@ namespace API_Core.Controllers // Đã đổi thành API_Core
             var claims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Name, user.Username),
-                new Claim(ClaimTypes.Role, user.Role)
+                new Claim(ClaimTypes.Name, user.TenDangNhap),
+                new Claim(ClaimTypes.Role, user.VaiTro)
             };
 
             var token = new JwtSecurityToken(

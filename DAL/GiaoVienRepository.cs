@@ -4,6 +4,7 @@ using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Model;
 using System.Data;
+using System.Collections.Generic;
 
 namespace DAL
 {
@@ -20,9 +21,9 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                string sql = @"SELECT id AS Id, user_id AS UserId, teacher_code AS TeacherCode, 
-                                      full_name AS FullName, phone AS Phone, gender AS Gender 
-                               FROM teachers";
+                // Tên cột trong SQL giờ đã giống hệt tên Property trong Model nên không cần dùng AS nữa
+                string sql = @"SELECT Id, NguoiDungId, MaGiaoVien, HoTen, SoDienThoai, GioiTinh 
+                               FROM GiaoVien";
                 return db.Query<GiaoVienModel>(sql);
             }
         }
@@ -31,9 +32,8 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                string sql = @"SELECT id AS Id, user_id AS UserId, teacher_code AS TeacherCode, 
-                                      full_name AS FullName, phone AS Phone, gender AS Gender 
-                               FROM teachers WHERE id = @Id";
+                string sql = @"SELECT Id, NguoiDungId, MaGiaoVien, HoTen, SoDienThoai, GioiTinh 
+                               FROM GiaoVien WHERE Id = @Id";
                 return db.QueryFirstOrDefault<GiaoVienModel>(sql, new { Id = id });
             }
         }
@@ -42,9 +42,9 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                // Lệnh Insert đơn giản, Trigger dưới SQL sẽ tự lo phần tạo User và Password
-                string sql = @"INSERT INTO teachers (teacher_code, full_name, phone, gender) 
-                               VALUES (@TeacherCode, @FullName, @Phone, @Gender)";
+                // Lệnh Insert đơn giản, Trigger trg_GiaoVien_TaoTaiKhoan dưới SQL sẽ tự lo phần tạo User
+                string sql = @"INSERT INTO GiaoVien (MaGiaoVien, HoTen, SoDienThoai, GioiTinh) 
+                               VALUES (@MaGiaoVien, @HoTen, @SoDienThoai, @GioiTinh)";
                 return db.Execute(sql, model) > 0;
             }
         }
@@ -53,9 +53,9 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                string sql = @"UPDATE teachers 
-                               SET full_name = @FullName, phone = @Phone, gender = @Gender 
-                               WHERE id = @Id";
+                string sql = @"UPDATE GiaoVien 
+                               SET HoTen = @HoTen, SoDienThoai = @SoDienThoai, GioiTinh = @GioiTinh 
+                               WHERE Id = @Id";
                 return db.Execute(sql, model) > 0;
             }
         }
@@ -64,12 +64,12 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                // Lưu ý: Để xóa hoàn toàn giáo viên, cần xóa cả tài khoản trong bảng users
+                // Xóa giáo viên và xóa luôn tài khoản tương ứng trong bảng NguoiDung
                 string sql = @"
                     DECLARE @userId INT;
-                    SELECT @userId = user_id FROM teachers WHERE id = @Id;
-                    DELETE FROM teachers WHERE id = @Id;
-                    DELETE FROM users WHERE id = @userId;";
+                    SELECT @userId = NguoiDungId FROM GiaoVien WHERE Id = @Id;
+                    DELETE FROM GiaoVien WHERE Id = @Id;
+                    DELETE FROM NguoiDung WHERE Id = @userId;";
                 return db.Execute(sql, new { Id = id }) > 0;
             }
         }

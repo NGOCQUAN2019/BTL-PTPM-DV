@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 using Model;
 using System;
 
-namespace API.Controllers
+namespace API_Admin.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "admin")]
+    [Authorize(Roles = "QuanTri")]
     public class GiaoVienController : ControllerBase
     {
         private readonly IGiaoVienBusiness _teacherBusiness;

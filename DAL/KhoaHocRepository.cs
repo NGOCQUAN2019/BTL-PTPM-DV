@@ -21,11 +21,10 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                string sql = @"SELECT id AS Id, code AS Code, name AS Name, level AS Level, 
-                                      duration_hours AS DurationHours, tuition_fee AS TuitionFee, 
-                                      requires_placement AS RequiresPlacement, pass_score AS PassScore, 
-                                      min_attendance_pct AS MinAttendancePct 
-                               FROM courses";
+                // Tên cột đã khớp 100% với Model, không cần dùng AS
+                string sql = @"SELECT Id, MaKhoaHoc, TenKhoaHoc, CapDo, 
+                                      ThoiLuongGio, HocPhi, YeuCauThiDauVao, DiemDat 
+                               FROM KhoaHoc";
                 return db.Query<KhoaHocModel>(sql);
             }
         }
@@ -34,11 +33,9 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                string sql = @"SELECT id AS Id, code AS Code, name AS Name, level AS Level, 
-                                      duration_hours AS DurationHours, tuition_fee AS TuitionFee, 
-                                      requires_placement AS RequiresPlacement, pass_score AS PassScore, 
-                                      min_attendance_pct AS MinAttendancePct 
-                               FROM courses WHERE id = @Id";
+                string sql = @"SELECT Id, MaKhoaHoc, TenKhoaHoc, CapDo, 
+                                      ThoiLuongGio, HocPhi, YeuCauThiDauVao, DiemDat 
+                               FROM KhoaHoc WHERE Id = @Id";
                 return db.QueryFirstOrDefault<KhoaHocModel>(sql, new { Id = id });
             }
         }
@@ -47,8 +44,8 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                string sql = @"INSERT INTO courses (code, name, level, duration_hours, tuition_fee, requires_placement, pass_score, min_attendance_pct) 
-                               VALUES (@Code, @Name, @Level, @DurationHours, @TuitionFee, @RequiresPlacement, @PassScore, @MinAttendancePct)";
+                string sql = @"INSERT INTO KhoaHoc (MaKhoaHoc, TenKhoaHoc, CapDo, ThoiLuongGio, HocPhi, YeuCauThiDauVao, DiemDat) 
+                               VALUES (@MaKhoaHoc, @TenKhoaHoc, @CapDo, @ThoiLuongGio, @HocPhi, @YeuCauThiDauVao, @DiemDat)";
                 return db.Execute(sql, model) > 0;
             }
         }
@@ -57,11 +54,11 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                string sql = @"UPDATE courses 
-                               SET code = @Code, name = @Name, level = @Level, duration_hours = @DurationHours, 
-                                   tuition_fee = @TuitionFee, requires_placement = @RequiresPlacement, 
-                                   pass_score = @PassScore, min_attendance_pct = @MinAttendancePct 
-                               WHERE id = @Id";
+                string sql = @"UPDATE KhoaHoc 
+                               SET MaKhoaHoc = @MaKhoaHoc, TenKhoaHoc = @TenKhoaHoc, CapDo = @CapDo, 
+                                   ThoiLuongGio = @ThoiLuongGio, HocPhi = @HocPhi, 
+                                   YeuCauThiDauVao = @YeuCauThiDauVao, DiemDat = @DiemDat 
+                               WHERE Id = @Id";
                 return db.Execute(sql, model) > 0;
             }
         }
@@ -70,7 +67,8 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                return db.Execute("DELETE FROM courses WHERE id = @Id", new { Id = id }) > 0;
+                // Thay 'courses' thành 'KhoaHoc'
+                return db.Execute("DELETE FROM KhoaHoc WHERE Id = @Id", new { Id = id }) > 0;
             }
         }
     }

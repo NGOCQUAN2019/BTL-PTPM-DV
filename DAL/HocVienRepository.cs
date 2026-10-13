@@ -22,8 +22,15 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
-                var parameters = new { p_student_code = model.StudentCode, p_full_name = model.FullName, p_email = model.Email };
-                db.Execute("sp_create_student", parameters, commandType: CommandType.StoredProcedure);
+                // Khớp tham số với @p_MaHocVien, @p_HoTen... trong Procedure sp_ThemHocVien
+                var parameters = new
+                {
+                    p_MaHocVien = model.MaHocVien,
+                    p_HoTen = model.HoTen,
+                    p_Email = model.Email,
+                    p_GioiTinh = model.GioiTinh // Bổ sung giới tính
+                };
+                db.Execute("sp_ThemHocVien", parameters, commandType: CommandType.StoredProcedure);
                 return true;
             }
         }
@@ -32,38 +39,48 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
-                var parameters = new { p_student_code = model.StudentCode, p_full_name = model.FullName, p_email = model.Email };
-                db.Execute("sp_update_student", parameters, commandType: CommandType.StoredProcedure);
+                var parameters = new
+                {
+                    p_MaHocVien = model.MaHocVien,
+                    p_HoTen = model.HoTen,
+                    p_Email = model.Email
+                };
+                db.Execute("sp_CapNhatHocVien", parameters, commandType: CommandType.StoredProcedure);
                 return true;
             }
         }
 
-        public bool DeleteStudent(string studentCode)
+        public bool DeleteStudent(string maHocVien)
         {
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
-                var parameters = new { p_student_code = studentCode };
-                db.Execute("sp_delete_student", parameters, commandType: CommandType.StoredProcedure);
+                // Dùng lệnh SQL trực tiếp để xóa sạch cả Học Viên và Tài Khoản liên kết
+                string sql = @"
+                    DECLARE @userId INT;
+                    SELECT @userId = NguoiDungId FROM HocVien WHERE MaHocVien = @MaHocVien;
+                    DELETE FROM HocVien WHERE MaHocVien = @MaHocVien;
+                    DELETE FROM NguoiDung WHERE Id = @userId;";
+
+                db.Execute(sql, new { MaHocVien = maHocVien });
                 return true;
             }
         }
 
-        public HocVienModel GetStudentById(string studentCode)
+        public HocVienModel GetStudentById(string maHocVien)
         {
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
-                var parameters = new { p_student_code = studentCode };
-                // QueryFirstOrDefault trả về 1 object duy nhất hoặc null nếu không tìm thấy
-                return db.QueryFirstOrDefault<HocVienModel>("sp_get_student_by_id", parameters, commandType: CommandType.StoredProcedure);
+                var parameters = new { p_MaHocVien = maHocVien };
+                return db.QueryFirstOrDefault<HocVienModel>("sp_LayHocVienTheoMa", parameters, commandType: CommandType.StoredProcedure);
             }
         }
 
-        public List<HocVienModel> SearchStudents(string keyword)
+        public List<HocVienModel> SearchStudents(string tuKhoa)
         {
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
-                var parameters = new { p_keyword = keyword ?? "" };
-                return db.Query<HocVienModel>("sp_search_students", parameters, commandType: CommandType.StoredProcedure).ToList();
+                var parameters = new { p_TuKhoa = tuKhoa ?? "" };
+                return db.Query<HocVienModel>("sp_TimKiemHocVien", parameters, commandType: CommandType.StoredProcedure).ToList();
             }
         }
     }

@@ -10,12 +10,12 @@ namespace Model
     public class AuthenticateModel
     {
         [Required(ErrorMessage = "Tên đăng nhập không được để trống")]
-        public string Username { get; set; }
+        public string TenDangNhap { get; set; }
 
         [Required(ErrorMessage = "Mật khẩu không được để trống")]
-        public string Password { get; set; }
+        public string MatKhau { get; set; }
     }
 
-    // Viết ké dòng này để hứng dữ liệu DB trả về (Id, Username, Role)
-    public record LoggedInUser(int Id, string Username, string Role);
+    // Đổi tên các biến hứng dữ liệu cho khớp với cột trong bảng NguoiDung
+    public record LoggedInUser(int Id, string TenDangNhap, string VaiTro);
 }

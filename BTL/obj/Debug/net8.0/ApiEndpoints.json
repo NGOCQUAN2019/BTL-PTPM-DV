@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "API.Controllers.GiaoVienController",
+    "ContainingType": "API_Admin.Controllers.GiaoVienController",
     "Method": "Create",
     "RelativePath": "api/GiaoVien/create",
     "HttpMethod": "POST",
@@ -16,7 +16,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.GiaoVienController",
+    "ContainingType": "API_Admin.Controllers.GiaoVienController",
     "Method": "Delete",
     "RelativePath": "api/GiaoVien/delete/{id}",
     "HttpMethod": "DELETE",
@@ -32,7 +32,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.GiaoVienController",
+    "ContainingType": "API_Admin.Controllers.GiaoVienController",
     "Method": "GetAll",
     "RelativePath": "api/GiaoVien/get-all",
     "HttpMethod": "GET",
@@ -42,7 +42,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.GiaoVienController",
+    "ContainingType": "API_Admin.Controllers.GiaoVienController",
     "Method": "GetById",
     "RelativePath": "api/GiaoVien/get-by-id/{id}",
     "HttpMethod": "GET",
@@ -58,7 +58,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.GiaoVienController",
+    "ContainingType": "API_Admin.Controllers.GiaoVienController",
     "Method": "Update",
     "RelativePath": "api/GiaoVien/update",
     "HttpMethod": "PUT",
@@ -74,7 +74,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.HocVienController",
+    "ContainingType": "API_Admin.Controllers.HocVienController",
     "Method": "CreateStudent",
     "RelativePath": "api/HocVien/create",
     "HttpMethod": "POST",
@@ -90,15 +90,15 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.HocVienController",
+    "ContainingType": "API_Admin.Controllers.HocVienController",
     "Method": "DeleteStudent",
-    "RelativePath": "api/HocVien/delete/{studentCode}",
+    "RelativePath": "api/HocVien/delete/{maHocVien}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "studentCode",
+        "Name": "maHocVien",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -106,15 +106,15 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.HocVienController",
+    "ContainingType": "API_Admin.Controllers.HocVienController",
     "Method": "GetStudentById",
-    "RelativePath": "api/HocVien/get-by-id/{studentCode}",
+    "RelativePath": "api/HocVien/get-by-id/{maHocVien}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "studentCode",
+        "Name": "maHocVien",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -122,7 +122,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.HocVienController",
+    "ContainingType": "API_Admin.Controllers.HocVienController",
     "Method": "SearchStudents",
     "RelativePath": "api/HocVien/search",
     "HttpMethod": "GET",
@@ -130,7 +130,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "keyword",
+        "Name": "tuKhoa",
         "Type": "System.String",
         "IsRequired": false
       }
@@ -138,7 +138,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.HocVienController",
+    "ContainingType": "API_Admin.Controllers.HocVienController",
     "Method": "UpdateStudent",
     "RelativePath": "api/HocVien/update",
     "HttpMethod": "PUT",

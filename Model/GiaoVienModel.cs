@@ -9,10 +9,10 @@ namespace Model
     public class GiaoVienModel
     {
         public int Id { get; set; }
-        public int? UserId { get; set; }
-        public string TeacherCode { get; set; }
-        public string FullName { get; set; }
-        public string Phone { get; set; }
-        public string Gender { get; set; }
+        public int? NguoiDungId { get; set; }
+        public string MaGiaoVien { get; set; }
+        public string HoTen { get; set; }
+        public string SoDienThoai { get; set; }
+        public string GioiTinh { get; set; }
     }
 }

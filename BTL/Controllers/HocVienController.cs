@@ -1,13 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using BLL;
+using Microsoft.AspNetCore.Authorization;
 using Model;
 using System;
 using BLL.Interfaces;
 
-namespace API.Controllers
+namespace API_Admin.Controllers // Đổi namespace cho khớp với project
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "QuanTri")] // Bổ sung thẻ bảo vệ API chỉ cho Admin
     public class HocVienController : ControllerBase
     {
         private readonly IHocVienBusiness _studentBusiness;
@@ -31,10 +32,10 @@ namespace API.Controllers
             }
             catch (Exception ex)
             {
-                // Bắt các lỗi từ BLL hoặc lỗi trùng lặp dữ liệu từ SQL Server
                 return BadRequest(new { statusCode = 400, message = ex.Message });
             }
         }
+
         [HttpPut("update")]
         public IActionResult UpdateStudent([FromBody] HocVienModel model)
         {
@@ -43,50 +44,52 @@ namespace API.Controllers
                 _studentBusiness.UpdateStudent(model);
                 return Ok(new { statusCode = 200, message = "Cập nhật thành công!" });
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(new { statusCode = 400, message = ex.Message });
             }
         }
 
-        [HttpDelete("delete/{studentCode}")]
-        public IActionResult DeleteStudent(string studentCode)
+        // Đổi studentCode thành maHocVien trên đường dẫn
+        [HttpDelete("delete/{maHocVien}")]
+        public IActionResult DeleteStudent(string maHocVien)
         {
             try
             {
-                _studentBusiness.DeleteStudent(studentCode);
+                _studentBusiness.DeleteStudent(maHocVien);
                 return Ok(new { statusCode = 200, message = "Xóa thành công!" });
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(new { statusCode = 400, message = ex.Message });
             }
         }
 
-        [HttpGet("get-by-id/{studentCode}")]
-        public IActionResult GetStudentById(string studentCode)
+        // Đổi studentCode thành maHocVien trên đường dẫn
+        [HttpGet("get-by-id/{maHocVien}")]
+        public IActionResult GetStudentById(string maHocVien)
         {
             try
             {
-                var data = _studentBusiness.GetStudentById(studentCode);
+                var data = _studentBusiness.GetStudentById(maHocVien);
                 if (data == null) return NotFound(new { message = "Không tìm thấy học viên!" });
                 return Ok(data);
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(new { statusCode = 400, message = ex.Message });
             }
         }
 
         [HttpGet("search")]
-        public IActionResult SearchStudents([FromQuery] string keyword = "")
+        public IActionResult SearchStudents([FromQuery] string tuKhoa = "") // Đổi keyword thành tuKhoa
         {
             try
             {
-                var data = _studentBusiness.SearchStudents(keyword);
+                var data = _studentBusiness.SearchStudents(tuKhoa);
                 return Ok(data);
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(new { statusCode = 400, message = ex.Message });
             }
