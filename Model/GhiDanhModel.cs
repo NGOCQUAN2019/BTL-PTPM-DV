@@ -1,12 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Model
 {
-    internal class EnrollmentModel
+    public class GhiDanhModel
     {
+        public int Id { get; set; }
+        public string MaHocVien { get; set; } // Liên kết với bảng HocVien
+        public int LopHocId { get; set; }     // Liên kết với bảng LopHoc
+        public DateTime NgayGhiDanh { get; set; }
+        public decimal SoTienDaDong { get; set; }
+        public string TrangThai { get; set; } // Ví dụ: "Chờ duyệt", "Đã duyệt", "Đã hủy"
     }
 }

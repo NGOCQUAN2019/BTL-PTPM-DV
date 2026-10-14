@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using Model;
 
 namespace BLL.Interfaces
 {
-    internal class IGhiDanhBusiness
+    public interface IGhiDanhBusiness
     {
+        IEnumerable<GhiDanhModel> GetAll();
+        GhiDanhModel GetById(int id);
+        bool Create(GhiDanhModel model);
+        bool Update(GhiDanhModel model);
+        bool Delete(int id);
     }
 }

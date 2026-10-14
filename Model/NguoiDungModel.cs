@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    internal class NguoiDungModel
+    public class NguoiDungModel
     {
+        public int Id { get; set; }
+        public string TenDangNhap { get; set; }
+        public string MatKhauHash { get; set; }
+        public string VaiTro { get; set; }
     }
 }
