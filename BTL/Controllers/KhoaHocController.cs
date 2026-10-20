@@ -7,51 +7,40 @@ namespace API_Admin.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "admin")] // Chỉ Admin có Token hợp lệ mới được gọi API này
+    [Authorize(Roles = "QuanTri")] // Bắt buộc là Admin
     public class KhoaHocController : ControllerBase
     {
-        private readonly IKhoaHocBusiness _courseBusiness;
+        private readonly IKhoaHocBusiness _khoaHocBusiness;
 
-        public KhoaHocController(IKhoaHocBusiness courseBusiness)
+        public KhoaHocController(IKhoaHocBusiness khoaHocBusiness)
         {
-            _courseBusiness = courseBusiness;
+            _khoaHocBusiness = khoaHocBusiness;
         }
 
         [HttpGet("get-all")]
-        public IActionResult GetAll()
-        {
-            return Ok(_courseBusiness.GetAll());
-        }
+        public IActionResult GetAll() => Ok(_khoaHocBusiness.GetAll());
 
         [HttpGet("get-by-id/{id}")]
-        public IActionResult GetById(int id)
-        {
-            var course = _courseBusiness.GetById(id);
-            if (course == null) return NotFound(new { message = "Không tìm thấy khóa học" });
-            return Ok(course);
-        }
+        public IActionResult GetById(int id) => Ok(_khoaHocBusiness.GetById(id));
 
         [HttpPost("create")]
         public IActionResult Create([FromBody] KhoaHocModel model)
         {
-            if (_courseBusiness.Create(model))
-                return Ok(new { message = "Thêm thành công!" });
-            return BadRequest(new { message = "Thêm thất bại!" });
+            if (_khoaHocBusiness.Create(model)) return Ok(new { message = "Thêm khóa học thành công!" });
+            return BadRequest(new { message = "Thêm khóa học thất bại!" });
         }
 
         [HttpPut("update")]
         public IActionResult Update([FromBody] KhoaHocModel model)
         {
-            if (_courseBusiness.Update(model))
-                return Ok(new { message = "Cập nhật thành công!" });
+            if (_khoaHocBusiness.Update(model)) return Ok(new { message = "Cập nhật khóa học thành công!" });
             return BadRequest(new { message = "Cập nhật thất bại!" });
         }
 
         [HttpDelete("delete/{id}")]
         public IActionResult Delete(int id)
         {
-            if (_courseBusiness.Delete(id))
-                return Ok(new { message = "Xóa thành công!" });
+            if (_khoaHocBusiness.Delete(id)) return Ok(new { message = "Xóa khóa học thành công!" });
             return BadRequest(new { message = "Xóa thất bại!" });
         }
     }

@@ -1,12 +1,17 @@
-﻿using System;
+﻿using Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL.Interfaces
 {
-    internal class IThanhToanRepository
+    public interface IThanhToanRepository
     {
+        // Gọi Stored Procedure thêm thanh toán
+        bool ThemThanhToan(ThanhToanRequest request);
+
+        // Truy vấn danh sách hóa đơn của 1 học viên
+        IEnumerable<HoaDonModel> GetHoaDonByHocVien(int hocVienId);
+
+        // Truy vấn lịch sử các lần nộp tiền của 1 hóa đơn
+        IEnumerable<ThanhToanModel> GetLichSuThanhToan(int hoaDonId);
     }
 }

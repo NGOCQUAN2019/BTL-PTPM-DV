@@ -42,8 +42,12 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                string sql = @"INSERT INTO GhiDanh (MaHocVien, LopHocId, NgayGhiDanh, SoTienDaDong, TrangThai) 
-                               VALUES (@MaHocVien, @LopHocId, @NgayGhiDanh, @SoTienDaDong, @TrangThai)";
+                // Nhờ SQL Server tự tìm Id và ném luôn vào Stored Procedure
+                string sql = @"
+            DECLARE @hvId INT = (SELECT Id FROM HocVien WHERE MaHocVien = @MaHocVien);
+            EXEC sp_GhiDanhHocVien @hvId, @LopHocId;";
+
+                // Truyền thẳng model vào, Dapper tự map @MaHocVien và @LopHocId
                 return db.Execute(sql, model) > 0;
             }
         }

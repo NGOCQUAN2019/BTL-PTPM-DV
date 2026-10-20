@@ -1,12 +1,12 @@
-﻿using System;
+﻿using Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BLL.Interfaces
 {
-    internal class IThanhToanBusiness
+    public interface IThanhToanBusiness
     {
+        bool ThemThanhToan(ThanhToanRequest request);
+        IEnumerable<HoaDonModel> GetHoaDonByHocVien(int hocVienId);
+        IEnumerable<ThanhToanModel> GetLichSuThanhToan(int hoaDonId);
     }
 }

@@ -1,5 +1,79 @@
 [
   {
+    "ContainingType": "API_Admin.Controllers.GhiDanhController",
+    "Method": "Create",
+    "RelativePath": "api/GhiDanh/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Model.GhiDanhModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.GhiDanhController",
+    "Method": "Delete",
+    "RelativePath": "api/GhiDanh/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.GhiDanhController",
+    "Method": "GetAll",
+    "RelativePath": "api/GhiDanh/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.GhiDanhController",
+    "Method": "GetById",
+    "RelativePath": "api/GhiDanh/get-by-id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.GhiDanhController",
+    "Method": "Update",
+    "RelativePath": "api/GhiDanh/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Model.GhiDanhModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_Admin.Controllers.GiaoVienController",
     "Method": "Create",
     "RelativePath": "api/GiaoVien/create",
@@ -296,6 +370,22 @@
       {
         "Name": "model",
         "Type": "Model.LopHocModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.ThanhToanController",
+    "Method": "ThuTien",
+    "RelativePath": "api/ThanhToan/thu-tien",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Model.ThanhToanRequest",
         "IsRequired": true
       }
     ],

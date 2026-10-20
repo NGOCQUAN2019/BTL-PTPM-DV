@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    internal class PaymentModel
+    public class ThanhToanModel
     {
+        public int Id { get; set; }
+        public int HoaDonId { get; set; }
+        public decimal SoTien { get; set; }
+        public string PhuongThuc { get; set; }
+        public DateTime NgayThanhToan { get; set; }
     }
 }

@@ -3,12 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 using Model;
 using BLL.Interfaces;
 
-namespace APIUser.Controllers
+namespace API_Admin.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-
-    [Authorize(Roles = "QuanTri,HocVien")]
+    [Authorize(Roles = "QuanTri")] // Chỉ Admin
     public class GhiDanhController : ControllerBase
     {
         private readonly IGhiDanhBusiness _ghiDanhBusiness;
@@ -19,32 +18,25 @@ namespace APIUser.Controllers
         }
 
         [HttpGet("get-all")]
-        public IActionResult GetAll()
-        {
-            return Ok(_ghiDanhBusiness.GetAll());
-        }
+        public IActionResult GetAll() => Ok(_ghiDanhBusiness.GetAll());
 
         [HttpGet("get-by-id/{id}")]
-        public IActionResult GetById(int id)
-        {
-            var data = _ghiDanhBusiness.GetById(id);
-            if (data == null) return NotFound(new { message = "Không tìm thấy hồ sơ ghi danh!" });
-            return Ok(data);
-        }
+        public IActionResult GetById(int id) => Ok(_ghiDanhBusiness.GetById(id));
 
         [HttpPost("create")]
         public IActionResult Create([FromBody] GhiDanhModel model)
         {
+            
             if (_ghiDanhBusiness.Create(model))
-                return Ok(new { message = "Ghi danh thành công!" });
-            return BadRequest(new { message = "Ghi danh thất bại! Vui lòng kiểm tra lại MaHocVien hoặc LopHocId." });
+                return Ok(new { message = "Thêm ghi danh thành công!" });
+            return BadRequest(new { message = "Thêm thất bại hoặc lớp đã đầy!" });
         }
 
         [HttpPut("update")]
         public IActionResult Update([FromBody] GhiDanhModel model)
         {
             if (_ghiDanhBusiness.Update(model))
-                return Ok(new { message = "Cập nhật thành công!" });
+                return Ok(new { message = "Cập nhật hồ sơ thành công!" });
             return BadRequest(new { message = "Cập nhật thất bại!" });
         }
 
