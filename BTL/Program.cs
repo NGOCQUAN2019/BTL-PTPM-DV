@@ -74,6 +74,9 @@ builder.Services.AddScoped<ILopHocBusiness, LopHocBusiness>();
 builder.Services.AddScoped<IGhiDanhRepository, GhiDanhRepository>();
 builder.Services.AddScoped<IGhiDanhBusiness, GhiDanhBusiness>();
 
+builder.Services.AddScoped<IHoaDonRepository, HoaDonRepository>();
+builder.Services.AddScoped<IHoaDonBusiness, HoaDonBusiness>();
+
 builder.Services.AddScoped<IThanhToanRepository, ThanhToanRepository>();
 builder.Services.AddScoped<IThanhToanBusiness, ThanhToanBusiness>();
 

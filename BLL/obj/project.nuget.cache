@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iK0E+3j7PJ0=",
+  "dgSpecHash": "u32m8kVmEsg=",
   "success": true,
   "projectFilePath": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
@@ -39,18 +39,5 @@
     "C:\\Users\\admin\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "message": "DAL depends on Microsoft.Extensions.Configuration (>= 8.0.4) but Microsoft.Extensions.Configuration 8.0.4 was not found. Microsoft.Extensions.Configuration 9.0.0 was resolved instead.",
-      "projectPath": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\BLL.csproj",
-      "warningLevel": 1,
-      "filePath": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\BLL.csproj",
-      "libraryId": "Microsoft.Extensions.Configuration",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

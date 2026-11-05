@@ -1691,7 +1691,7 @@
     "net8.0": [
       "Dapper >= 2.1.89",
       "Microsoft.Data.SqlClient >= 7.1.1",
-      "Microsoft.Extensions.Configuration >= 8.0.4",
+      "Microsoft.Extensions.Configuration >= 9.0.0",
       "Model >= 1.0.0"
     ]
   },
@@ -1760,7 +1760,7 @@
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
-            "version": "[8.0.4, )"
+            "version": "[9.0.0, )"
           }
         },
         "imports": [
@@ -1782,17 +1782,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.318/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "DAL depends on Microsoft.Extensions.Configuration (>= 8.0.4) but Microsoft.Extensions.Configuration 8.0.4 was not found. Microsoft.Extensions.Configuration 9.0.0 was resolved instead.",
-      "libraryId": "Microsoft.Extensions.Configuration",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }

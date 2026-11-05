@@ -42,13 +42,31 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                // Nhờ SQL Server tự tìm Id và ném luôn vào Stored Procedure
                 string sql = @"
             DECLARE @hvId INT = (SELECT Id FROM HocVien WHERE MaHocVien = @MaHocVien);
-            EXEC sp_GhiDanhHocVien @hvId, @LopHocId;";
+            
+            IF @hvId IS NULL
+                THROW 50001, N'Không tìm thấy mã học viên này trong hệ thống.', 1;
+            ELSE
+                EXEC sp_GhiDanhHocVien @hvId, @LopHocId;";
 
-                // Truyền thẳng model vào, Dapper tự map @MaHocVien và @LopHocId
-                return db.Execute(sql, model) > 0;
+                try
+                {
+                   
+                    db.Execute(sql, model);
+                    return true;
+                }
+                catch (Microsoft.Data.SqlClient.SqlException ex)
+                {
+                    
+                    if (ex.Number == 2627)
+                    {
+                        throw new Exception("Học viên này đã ghi danh vào lớp học này rồi!");
+                    }
+
+                 
+                    throw new Exception(ex.Message);
+                }
             }
         }
 

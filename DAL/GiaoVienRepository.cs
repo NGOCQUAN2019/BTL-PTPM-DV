@@ -21,7 +21,6 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                // Tên cột trong SQL giờ đã giống hệt tên Property trong Model nên không cần dùng AS nữa
                 string sql = @"SELECT Id, NguoiDungId, MaGiaoVien, HoTen, SoDienThoai, GioiTinh 
                                FROM GiaoVien";
                 return db.Query<GiaoVienModel>(sql);

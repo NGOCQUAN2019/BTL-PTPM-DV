@@ -11,18 +11,19 @@ namespace APIUser.Controllers
     [Authorize(Roles = "HocVien")] // Chỉ học viên mới xem được
     public class UHoaDonController : ControllerBase
     {
-        private readonly IThanhToanBusiness _thanhToanBusiness;
+        // 1. Đổi sang dùng IHoaDonBusiness
+        private readonly IHoaDonBusiness _hoaDonBusiness;
 
-        public UHoaDonController(IThanhToanBusiness thanhToanBusiness)
+        // 2. Tiêm IHoaDonBusiness vào Constructor
+        public UHoaDonController(IHoaDonBusiness hoaDonBusiness)
         {
-            _thanhToanBusiness = thanhToanBusiness;
+            _hoaDonBusiness = hoaDonBusiness;
         }
 
         [HttpGet("my-invoices")]
         public IActionResult GetMyInvoices()
         {
             // Tự động trích xuất Tên đăng nhập (hoặc Id) của Học viên từ Token JWT
-            // Giả sử claim NameIdentifier trong Token của bạn đang lưu HocVienId
             var currentUserIdStr = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
 
             if (string.IsNullOrEmpty(currentUserIdStr) || !int.TryParse(currentUserIdStr, out int hocVienId))
@@ -30,8 +31,8 @@ namespace APIUser.Controllers
                 return Unauthorized(new { message = "Không xác định được danh tính học viên." });
             }
 
-            // Gọi xuống BLL/DAL để lấy hóa đơn của đúng học viên này
-            var invoices = _thanhToanBusiness.GetHoaDonByHocVien(hocVienId);
+            // 3. Gọi hàm GetByHocVien từ module Hóa Đơn
+            var invoices = _hoaDonBusiness.GetByHocVien(hocVienId);
             return Ok(invoices);
         }
     }
