@@ -1,12 +1,14 @@
-﻿using System;
+﻿using Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL.Interfaces
 {
-    internal class IDiemSoRepository
+    public interface IDiemSoRepository
     {
+        IEnumerable<DiemSoModel> GetAll();
+        DiemSoModel GetById(int id);
+        bool Create(DiemSoModel model);
+        bool Update(DiemSoModel model);
+        bool Delete(int id);
     }
 }

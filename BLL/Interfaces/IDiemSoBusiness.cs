@@ -1,12 +1,14 @@
-﻿using System;
+﻿using Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BLL.Interfaces
 {
-    internal class IDiemSoBusiness
+    public interface IDiemSoBusiness
     {
+        IEnumerable<DiemSoModel> GetAll();
+        DiemSoModel GetById(int id);
+        bool Create(DiemSoModel model);
+        bool Update(DiemSoModel model);
+        bool Delete(int id);
     }
 }

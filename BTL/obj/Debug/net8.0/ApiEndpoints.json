@@ -1,5 +1,79 @@
 [
   {
+    "ContainingType": "APIAdmin.Controllers.DiemSoController",
+    "Method": "Create",
+    "RelativePath": "api/DiemSo/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Model.DiemSoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIAdmin.Controllers.DiemSoController",
+    "Method": "Delete",
+    "RelativePath": "api/DiemSo/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIAdmin.Controllers.DiemSoController",
+    "Method": "GetAll",
+    "RelativePath": "api/DiemSo/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIAdmin.Controllers.DiemSoController",
+    "Method": "GetById",
+    "RelativePath": "api/DiemSo/get-by-id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIAdmin.Controllers.DiemSoController",
+    "Method": "Update",
+    "RelativePath": "api/DiemSo/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Model.DiemSoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_Admin.Controllers.GhiDanhController",
     "Method": "Create",
     "RelativePath": "api/GhiDanh/create",
@@ -296,6 +370,80 @@
       {
         "Name": "model",
         "Type": "Model.KhoaHocModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIAdmin.Controllers.KyThiController",
+    "Method": "Create",
+    "RelativePath": "api/KyThi/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Model.KyThiModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIAdmin.Controllers.KyThiController",
+    "Method": "Delete",
+    "RelativePath": "api/KyThi/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIAdmin.Controllers.KyThiController",
+    "Method": "GetAll",
+    "RelativePath": "api/KyThi/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIAdmin.Controllers.KyThiController",
+    "Method": "GetById",
+    "RelativePath": "api/KyThi/get-by-id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIAdmin.Controllers.KyThiController",
+    "Method": "Update",
+    "RelativePath": "api/KyThi/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Model.KyThiModel",
         "IsRequired": true
       }
     ],
