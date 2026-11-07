@@ -1,5 +1,47 @@
 [
   {
+    "ContainingType": "APIAdmin.Controllers.ChungChiController",
+    "Method": "CapChungChi",
+    "RelativePath": "api/ChungChi/cap-chung-chi/{ghiDanhId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ghiDanhId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIAdmin.Controllers.ChungChiController",
+    "Method": "Delete",
+    "RelativePath": "api/ChungChi/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIAdmin.Controllers.ChungChiController",
+    "Method": "GetAll",
+    "RelativePath": "api/ChungChi/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "APIAdmin.Controllers.DiemSoController",
     "Method": "Create",
     "RelativePath": "api/DiemSo/create",
@@ -216,6 +258,32 @@
       {
         "Name": "model",
         "Type": "Model.GiaoVienModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIAdmin.Controllers.HoaDonController",
+    "Method": "GetAll",
+    "RelativePath": "api/HoaDon/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIAdmin.Controllers.HoaDonController",
+    "Method": "GetByHocVienId",
+    "RelativePath": "api/HoaDon/get-by-hoc-vien/{hocVienId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hocVienId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -524,19 +592,29 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API_Admin.Controllers.ThanhToanController",
-    "Method": "ThuTien",
-    "RelativePath": "api/ThanhToan/thu-tien",
+    "ContainingType": "APIAdmin.Controllers.ThanhToanController",
+    "Method": "Create",
+    "RelativePath": "api/ThanhToan/thanh-toan",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "Model.ThanhToanRequest",
+        "Name": "model",
+        "Type": "Model.ThanhToanModel",
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIAdmin.Controllers.ThongKeController",
+    "Method": "GetThongKeLopHoc",
+    "RelativePath": "api/ThongKe/lop-hoc",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

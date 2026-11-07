@@ -9,47 +9,22 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen(c =>
 {
-    // Tạo nút Authorize trên giao diện Swagger
-    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-    {
-        Description = "Nhập 'Bearer' [khoảng trắng] rồi dán Token vào. Ví dụ: Bearer eyJhbG...",
-        Name = "Authorization",
-        In = ParameterLocation.Header,
-        Type = SecuritySchemeType.ApiKey,
-        Scheme = "Bearer"
-    });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API Core", Version = "v1" });
 
-    // Yêu cầu Swagger tự động đính kèm Token vào Header của mỗi API khi gọi
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement()
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                },
-                Scheme = "oauth2",
-                Name = "Bearer",
-                In = ParameterLocation.Header,
-            },
-            new List<string>()
-        }
-    });
 });
 
 // Đăng ký bổ sung cho luồng Login
 builder.Services.AddScoped<INguoiDungRepository, NguoiDungRepository>();
 builder.Services.AddScoped<INguoiDungBusiness, NguoiDungBusiness>();
 
+// Cấu hình mã hóa và xác thực JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -76,6 +51,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Kích hoạt Middleware đọc và xác thực Token JWT
+app.UseAuthentication();
+
+// Middleware kiểm tra quyền truy cập (Roles)
 app.UseAuthorization();
 
 app.MapControllers();

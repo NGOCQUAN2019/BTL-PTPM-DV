@@ -1,38 +1,39 @@
 ﻿using DAL.Interfaces;
-using Dapper;
-using Microsoft.Data.SqlClient;
-using Microsoft.Extensions.Configuration;
 using Model;
-using System.Data;
 using System;
+using System.Data;
+using Microsoft.Data.SqlClient;
+using Dapper;
+using Microsoft.Extensions.Configuration;
 
 namespace DAL
 {
     public class ThanhToanRepository : IThanhToanRepository
     {
         private readonly string _conn;
+        public ThanhToanRepository(IConfiguration configuration) => _conn = configuration.GetConnectionString("DefaultConnection");
 
-        public ThanhToanRepository(IConfiguration configuration)
-        {
-            _conn = configuration.GetConnectionString("DefaultConnection");
-        }
-
-        public bool Create(ThanhToanRequest request)
+        public bool Create(ThanhToanModel model)
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                var parameters = new DynamicParameters();
-                parameters.Add("@p_HoaDonId", request.HoaDonId);
-                parameters.Add("@p_SoTien", request.SoTien);
-                parameters.Add("@p_PhuongThuc", request.PhuongThuc);
-
                 try
                 {
-                    return db.Execute("sp_ThemThanhToan", parameters, commandType: CommandType.StoredProcedure) > 0;
+                    // Truyền đúng 3 tham số mà SP sp_ThemThanhToan yêu cầu
+                    var parameters = new
+                    {
+                        p_HoaDonId = model.HoaDonId,
+                        p_SoTien = model.SoTien,
+                        p_PhuongThuc = model.PhuongThuc
+                    };
+
+                    db.Execute("sp_ThemThanhToan", parameters, commandType: CommandType.StoredProcedure);
+                    return true;
                 }
-                catch (SqlException ex)
+                catch (Exception ex)
                 {
-                    throw new Exception("Lỗi khi thanh toán: " + ex.Message);
+                    // Lỗi 547 là lỗi khóa ngoại (VD: Nhập sai mã Hóa Đơn)
+                    throw new Exception("Lỗi xử lý thanh toán: " + ex.Message);
                 }
             }
         }

@@ -1,11 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using BLL.Interfaces;
+﻿using BLL.Interfaces;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System;
 
 namespace APIAdmin.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "QuanTri")]
+
     public class ChungChiController : ControllerBase
     {
         private readonly IChungChiBusiness _chungChiBusiness;

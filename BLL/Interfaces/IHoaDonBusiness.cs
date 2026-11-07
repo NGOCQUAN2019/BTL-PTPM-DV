@@ -6,6 +6,6 @@ namespace BLL.Interfaces
     public interface IHoaDonBusiness
     {
         IEnumerable<HoaDonModel> GetAll();
-        IEnumerable<HoaDonModel> GetByHocVien(int hocVienId);
+        IEnumerable<HoaDonModel> GetByHocVienId(int hocVienId);
     }
 }

@@ -1,12 +1,10 @@
-﻿using System;
+﻿using Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL.Interfaces
 {
-    internal class IThongKeRepository
+    public interface IThongKeRepository
     {
+        IEnumerable<ThongKeLopHocModel> GetThongKeLopHoc();
     }
 }

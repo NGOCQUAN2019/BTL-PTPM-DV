@@ -1,12 +1,10 @@
-﻿using System;
+﻿using Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BLL.Interfaces
 {
-    internal class IThongKeBusiness
+    public interface IThongKeBusiness
     {
+        IEnumerable<ThongKeLopHocModel> GetThongKeLopHoc();
     }
 }

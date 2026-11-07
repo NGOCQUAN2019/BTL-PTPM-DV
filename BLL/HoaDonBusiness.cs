@@ -7,9 +7,21 @@ namespace BLL
 {
     public class HoaDonBusiness : IHoaDonBusiness
     {
-        private readonly IHoaDonRepository _res;
-        public HoaDonBusiness(IHoaDonRepository res) { _res = res; }
-        public IEnumerable<HoaDonModel> GetAll() => _res.GetAll();
-        public IEnumerable<HoaDonModel> GetByHocVien(int hocVienId) => _res.GetByHocVien(hocVienId);
+        private readonly IHoaDonRepository _hoaDonRepository;
+
+        public HoaDonBusiness(IHoaDonRepository hoaDonRepository)
+        {
+            _hoaDonRepository = hoaDonRepository;
+        }
+
+        public IEnumerable<HoaDonModel> GetAll()
+        {
+            return _hoaDonRepository.GetAll();
+        }
+
+        public IEnumerable<HoaDonModel> GetByHocVienId(int hocVienId)
+        {
+            return _hoaDonRepository.GetByHocVienId(hocVienId);
+        }
     }
 }

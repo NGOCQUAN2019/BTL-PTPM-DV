@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using BLL.Interfaces;
+﻿using BLL.Interfaces;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Model;
 using System;
 
@@ -7,6 +8,8 @@ namespace APIAdmin.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "QuanTri")]
+
     public class DiemSoController : ControllerBase
     {
         private readonly IDiemSoBusiness _diemSoBusiness;

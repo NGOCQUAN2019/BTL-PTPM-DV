@@ -1,21 +1,17 @@
 ﻿using DAL.Interfaces;
-using Dapper;
-using Microsoft.Data.SqlClient;
-using Microsoft.Extensions.Configuration;
 using Model;
 using System.Collections.Generic;
 using System.Data;
+using Microsoft.Data.SqlClient;
+using Dapper;
+using Microsoft.Extensions.Configuration;
 
 namespace DAL
 {
     public class HoaDonRepository : IHoaDonRepository
     {
         private readonly string _conn;
-
-        public HoaDonRepository(IConfiguration configuration)
-        {
-            _conn = configuration.GetConnectionString("DefaultConnection");
-        }
+        public HoaDonRepository(IConfiguration configuration) => _conn = configuration.GetConnectionString("DefaultConnection");
 
         public IEnumerable<HoaDonModel> GetAll()
         {
@@ -25,11 +21,12 @@ namespace DAL
             }
         }
 
-        public IEnumerable<HoaDonModel> GetByHocVien(int hocVienId)
+        public IEnumerable<HoaDonModel> GetByHocVienId(int hocVienId)
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                return db.Query<HoaDonModel>("SELECT * FROM HoaDon WHERE HocVienId = @Id ORDER BY HanThanhToan DESC", new { Id = hocVienId });
+                // Lọc hóa đơn để Học viên có thể xem mình đang nợ những khoản nào
+                return db.Query<HoaDonModel>("SELECT * FROM HoaDon WHERE HocVienId = @HocVienId", new { HocVienId = hocVienId });
             }
         }
     }

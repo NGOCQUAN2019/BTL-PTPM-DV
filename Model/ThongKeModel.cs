@@ -1,12 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Model
 {
-    internal class DashboardModel
+    public class ThongKeLopHocModel
     {
+        public string MaLopHoc { get; set; }
+        public string TenKhoaHoc { get; set; }
+        public string TenGiaoVien { get; set; }
+        public string TrangThai { get; set; }
+        public int SiSoToiDa { get; set; }
+        public int DaGhiDanh { get; set; }
+
+        public decimal? DiemTrungBinhLop { get; set; }
+        public decimal? TyLeDau { get; set; }
+
+        public decimal TongNoHocPhi { get; set; }
     }
 }

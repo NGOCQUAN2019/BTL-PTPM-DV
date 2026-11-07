@@ -89,6 +89,9 @@ builder.Services.AddScoped<IChungChiBusiness, ChungChiBusiness>();
 builder.Services.AddScoped<IThanhToanRepository, ThanhToanRepository>();
 builder.Services.AddScoped<IThanhToanBusiness, ThanhToanBusiness>();
 
+builder.Services.AddScoped<IThongKeRepository, ThongKeRepository>();
+builder.Services.AddScoped<IThongKeBusiness, ThongKeBusiness>();
+
 
 var app = builder.Build();
 
