@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Model;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using BLL.Interfaces;
 
 namespace API_User.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "QuanTri")] // Bắt buộc là Admin
+    [Authorize(Roles = "HocVien")]
+    [AllowAnonymous]
     public class KhoaHocController : ControllerBase
     {
         private readonly IKhoaHocBusiness _khoaHocBusiness;
@@ -17,31 +17,12 @@ namespace API_User.Controllers
             _khoaHocBusiness = khoaHocBusiness;
         }
 
+        // Học viên xem toàn bộ danh sách khóa học đang có để chọn đăng ký
         [HttpGet("get-all")]
         public IActionResult GetAll() => Ok(_khoaHocBusiness.GetAll());
 
+        // Học viên bấm vào xem chi tiết thông tin của 1 khóa học
         [HttpGet("get-by-id/{id}")]
         public IActionResult GetById(int id) => Ok(_khoaHocBusiness.GetById(id));
-
-        [HttpPost("create")]
-        public IActionResult Create([FromBody] KhoaHocModel model)
-        {
-            if (_khoaHocBusiness.Create(model)) return Ok(new { message = "Thêm khóa học thành công!" });
-            return BadRequest(new { message = "Thêm khóa học thất bại!" });
-        }
-
-        [HttpPut("update")]
-        public IActionResult Update([FromBody] KhoaHocModel model)
-        {
-            if (_khoaHocBusiness.Update(model)) return Ok(new { message = "Cập nhật khóa học thành công!" });
-            return BadRequest(new { message = "Cập nhật thất bại!" });
-        }
-
-        [HttpDelete("delete/{id}")]
-        public IActionResult Delete(int id)
-        {
-            if (_khoaHocBusiness.Delete(id)) return Ok(new { message = "Xóa khóa học thành công!" });
-            return BadRequest(new { message = "Xóa thất bại!" });
-        }
     }
 }

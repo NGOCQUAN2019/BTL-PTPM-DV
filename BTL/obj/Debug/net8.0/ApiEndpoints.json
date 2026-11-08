@@ -42,7 +42,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIAdmin.Controllers.DiemSoController",
+    "ContainingType": "API_Admin.Controllers.DiemSoController",
     "Method": "Create",
     "RelativePath": "api/DiemSo/create",
     "HttpMethod": "POST",
@@ -58,7 +58,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIAdmin.Controllers.DiemSoController",
+    "ContainingType": "API_Admin.Controllers.DiemSoController",
     "Method": "Delete",
     "RelativePath": "api/DiemSo/delete/{id}",
     "HttpMethod": "DELETE",
@@ -74,7 +74,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIAdmin.Controllers.DiemSoController",
+    "ContainingType": "API_Admin.Controllers.DiemSoController",
     "Method": "GetAll",
     "RelativePath": "api/DiemSo/get-all",
     "HttpMethod": "GET",
@@ -84,7 +84,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIAdmin.Controllers.DiemSoController",
+    "ContainingType": "API_Admin.Controllers.DiemSoController",
     "Method": "GetById",
     "RelativePath": "api/DiemSo/get-by-id/{id}",
     "HttpMethod": "GET",
@@ -100,7 +100,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIAdmin.Controllers.DiemSoController",
+    "ContainingType": "API_Admin.Controllers.DiemSoController",
     "Method": "Update",
     "RelativePath": "api/DiemSo/update",
     "HttpMethod": "PUT",
@@ -110,80 +110,6 @@
       {
         "Name": "model",
         "Type": "Model.DiemSoModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_Admin.Controllers.GhiDanhController",
-    "Method": "Create",
-    "RelativePath": "api/GhiDanh/create",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "Model.GhiDanhModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_Admin.Controllers.GhiDanhController",
-    "Method": "Delete",
-    "RelativePath": "api/GhiDanh/delete/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_Admin.Controllers.GhiDanhController",
-    "Method": "GetAll",
-    "RelativePath": "api/GhiDanh/get-all",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_Admin.Controllers.GhiDanhController",
-    "Method": "GetById",
-    "RelativePath": "api/GhiDanh/get-by-id/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_Admin.Controllers.GhiDanhController",
-    "Method": "Update",
-    "RelativePath": "api/GhiDanh/update",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "Model.GhiDanhModel",
         "IsRequired": true
       }
     ],
@@ -264,7 +190,39 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIAdmin.Controllers.HoaDonController",
+    "ContainingType": "API_Admin.Controllers.HoaDonController",
+    "Method": "Create",
+    "RelativePath": "api/HoaDon/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Model.HoaDonModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.HoaDonController",
+    "Method": "Delete",
+    "RelativePath": "api/HoaDon/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.HoaDonController",
     "Method": "GetAll",
     "RelativePath": "api/HoaDon/get-all",
     "HttpMethod": "GET",
@@ -274,7 +232,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIAdmin.Controllers.HoaDonController",
+    "ContainingType": "API_Admin.Controllers.HoaDonController",
     "Method": "GetByHocVienId",
     "RelativePath": "api/HoaDon/get-by-hoc-vien/{hocVienId}",
     "HttpMethod": "GET",
@@ -284,6 +242,22 @@
       {
         "Name": "hocVienId",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.HoaDonController",
+    "Method": "Update",
+    "RelativePath": "api/HoaDon/update-trang-thai",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Model.HoaDonModel",
         "IsRequired": true
       }
     ],
@@ -444,7 +418,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIAdmin.Controllers.KyThiController",
+    "ContainingType": "API_Admin.Controllers.KyThiController",
     "Method": "Create",
     "RelativePath": "api/KyThi/create",
     "HttpMethod": "POST",
@@ -460,7 +434,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIAdmin.Controllers.KyThiController",
+    "ContainingType": "API_Admin.Controllers.KyThiController",
     "Method": "Delete",
     "RelativePath": "api/KyThi/delete/{id}",
     "HttpMethod": "DELETE",
@@ -476,7 +450,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIAdmin.Controllers.KyThiController",
+    "ContainingType": "API_Admin.Controllers.KyThiController",
     "Method": "GetAll",
     "RelativePath": "api/KyThi/get-all",
     "HttpMethod": "GET",
@@ -486,7 +460,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIAdmin.Controllers.KyThiController",
+    "ContainingType": "API_Admin.Controllers.KyThiController",
     "Method": "GetById",
     "RelativePath": "api/KyThi/get-by-id/{id}",
     "HttpMethod": "GET",
@@ -502,7 +476,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIAdmin.Controllers.KyThiController",
+    "ContainingType": "API_Admin.Controllers.KyThiController",
     "Method": "Update",
     "RelativePath": "api/KyThi/update",
     "HttpMethod": "PUT",
@@ -592,7 +566,33 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIAdmin.Controllers.ThanhToanController",
+    "ContainingType": "API_Admin.Controllers.ThanhToanController",
+    "Method": "Delete",
+    "RelativePath": "api/ThanhToan/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.ThanhToanController",
+    "Method": "GetAll",
+    "RelativePath": "api/ThanhToan/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.ThanhToanController",
     "Method": "Create",
     "RelativePath": "api/ThanhToan/thanh-toan",
     "HttpMethod": "POST",
@@ -608,7 +608,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIAdmin.Controllers.ThongKeController",
+    "ContainingType": "API_Admin.Controllers.ThongKeController",
     "Method": "GetThongKeLopHoc",
     "RelativePath": "api/ThongKe/lop-hoc",
     "HttpMethod": "GET",

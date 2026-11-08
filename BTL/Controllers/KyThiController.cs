@@ -1,13 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using BLL.Interfaces;
 using Model;
 using System;
 
-namespace APIAdmin.Controllers
+namespace API_Admin.Controllers // Đổi namespace về project Admin
 {
     [Route("api/[controller]")]
     [ApiController]
-    // [Authorize(Roles = "Admin,GiaoVien")] // Bỏ comment khi bạn muốn yêu cầu đăng nhập
+    [Authorize] // Chốt chặn vòng ngoài: Bắt buộc đăng nhập
     public class KyThiController : ControllerBase
     {
         private readonly IKyThiBusiness _kyThiBusiness;
@@ -17,13 +18,16 @@ namespace APIAdmin.Controllers
             _kyThiBusiness = kyThiBusiness;
         }
 
+        // Cả Admin và Giáo viên đều được xem lịch/danh sách kỳ thi
         [HttpGet("get-all")]
+        [Authorize(Roles = "QuanTri,GiaoVien")]
         public IActionResult GetAll()
         {
             return Ok(_kyThiBusiness.GetAll());
         }
 
         [HttpGet("get-by-id/{id}")]
+        [Authorize(Roles = "QuanTri,GiaoVien")]
         public IActionResult GetById(int id)
         {
             var data = _kyThiBusiness.GetById(id);
@@ -33,7 +37,9 @@ namespace APIAdmin.Controllers
             return Ok(data);
         }
 
+        // ĐỘC QUYỀN ADMIN: Lên lịch thi, sửa lịch thi, xóa lịch thi
         [HttpPost("create")]
+        [Authorize(Roles = "QuanTri")]
         public IActionResult Create([FromBody] KyThiModel model)
         {
             try
@@ -51,6 +57,7 @@ namespace APIAdmin.Controllers
         }
 
         [HttpPut("update")]
+        [Authorize(Roles = "QuanTri")]
         public IActionResult Update([FromBody] KyThiModel model)
         {
             try
@@ -67,6 +74,7 @@ namespace APIAdmin.Controllers
         }
 
         [HttpDelete("delete/{id}")]
+        [Authorize(Roles = "QuanTri")]
         public IActionResult Delete(int id)
         {
             try

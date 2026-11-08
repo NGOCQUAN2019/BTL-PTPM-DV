@@ -7,8 +7,7 @@ namespace APIAdmin.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "QuanTri")]
-
+    [Authorize]
     public class ChungChiController : ControllerBase
     {
         private readonly IChungChiBusiness _chungChiBusiness;
@@ -19,13 +18,14 @@ namespace APIAdmin.Controllers
         }
 
         [HttpGet("get-all")]
+        [Authorize(Roles = "QuanTri,GiaoVien")] // Phân quyền cấp hàm: Cả Admin và Giáo viên đều xem được
         public IActionResult GetAll()
         {
             return Ok(_chungChiBusiness.GetAll());
         }
 
-        // Chỉ cần truyền GhiDanhId vào URL, không cần body JSON phức tạp
         [HttpPost("cap-chung-chi/{ghiDanhId}")]
+        [Authorize(Roles = "QuanTri")] // Phân quyền cấp hàm: Chỉ Admin được cấp
         public IActionResult CapChungChi(int ghiDanhId)
         {
             try
@@ -43,6 +43,7 @@ namespace APIAdmin.Controllers
         }
 
         [HttpDelete("delete/{id}")]
+        [Authorize(Roles = "QuanTri")] // Phân quyền cấp hàm: Chỉ Admin được xóa
         public IActionResult Delete(int id)
         {
             try

@@ -3,13 +3,13 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Model;
 using System;
+using System.Security.Claims;
 
 namespace APIUser.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "QuanTri")]
-
+    [Authorize(Roles = "HocVien")] // Cố định chỉ cho phép Học viên truy cập vào các API ở đây
     public class DiemSoController : ControllerBase
     {
         private readonly IDiemSoBusiness _diemSoBusiness;
@@ -19,10 +19,20 @@ namespace APIUser.Controllers
             _diemSoBusiness = diemSoBusiness;
         }
 
-        [HttpGet("get-all")]
-        public IActionResult GetAll()
+        // Học viên xem bảng điểm cá nhân
+        [HttpGet("get-diem-cua-toi")]
+        public IActionResult GetDiemCuaToi()
         {
-            return Ok(_diemSoBusiness.GetAll());
+            try
+            {
+
+                // Gọi hàm lấy dữ liệu điểm 
+                return Ok(_diemSoBusiness.GetAll());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpGet("get-by-id/{id}")]
@@ -33,55 +43,6 @@ namespace APIUser.Controllers
                 return NotFound(new { message = "Không tìm thấy dữ liệu điểm này!" });
 
             return Ok(data);
-        }
-
-        [HttpPost("create")]
-        public IActionResult Create([FromBody] DiemSoModel model)
-        {
-            try
-            {
-                if (_diemSoBusiness.Create(model))
-                    return Ok(new { message = "Nhập điểm thành công!" });
-
-                return BadRequest(new { message = "Nhập điểm thất bại." });
-            }
-            catch (Exception ex)
-            {
-                // Hứng cái lỗi 2627 (Trùng lặp học viên trong cùng 1 kỳ thi)
-                return BadRequest(new { message = ex.Message });
-            }
-        }
-
-        [HttpPut("update")]
-        public IActionResult Update([FromBody] DiemSoModel model)
-        {
-            try
-            {
-                if (_diemSoBusiness.Update(model))
-                    return Ok(new { message = "Cập nhật điểm thành công!" });
-
-                return BadRequest(new { message = "Cập nhật điểm thất bại." });
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
-        }
-
-        [HttpDelete("delete/{id}")]
-        public IActionResult Delete(int id)
-        {
-            try
-            {
-                if (_diemSoBusiness.Delete(id))
-                    return Ok(new { message = "Xóa điểm thành công!" });
-
-                return BadRequest(new { message = "Xóa điểm thất bại." });
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
         }
     }
 }

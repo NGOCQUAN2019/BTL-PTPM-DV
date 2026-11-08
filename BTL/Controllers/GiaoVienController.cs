@@ -8,7 +8,7 @@ namespace API_Admin.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "QuanTri")]
+    [Authorize] // Chốt chặn vòng ngoài nội bộ
     public class GiaoVienController : ControllerBase
     {
         private readonly IGiaoVienBusiness _teacherBusiness;
@@ -19,12 +19,14 @@ namespace API_Admin.Controllers
         }
 
         [HttpGet("get-all")]
+        [Authorize(Roles = "QuanTri,GiaoVien")] // Giữ lại nội bộ Admin và Giáo viên
         public IActionResult GetAll()
         {
             return Ok(_teacherBusiness.GetAll());
         }
 
         [HttpGet("get-by-id/{id}")]
+        [Authorize(Roles = "QuanTri,GiaoVien")] // Giữ lại nội bộ Admin và Giáo viên
         public IActionResult GetById(int id)
         {
             var teacher = _teacherBusiness.GetById(id);
@@ -33,6 +35,7 @@ namespace API_Admin.Controllers
         }
 
         [HttpPost("create")]
+        [Authorize(Roles = "QuanTri")] // Độc quyền Admin
         public IActionResult Create([FromBody] GiaoVienModel model)
         {
             if (_teacherBusiness.Create(model))
@@ -41,6 +44,7 @@ namespace API_Admin.Controllers
         }
 
         [HttpPut("update")]
+        [Authorize(Roles = "QuanTri,GiaoVien")] // Admin sửa hồ sơ chung, Giáo viên tự cập nhật thông tin cá nhân
         public IActionResult Update([FromBody] GiaoVienModel model)
         {
             if (_teacherBusiness.Update(model))
@@ -49,6 +53,7 @@ namespace API_Admin.Controllers
         }
 
         [HttpDelete("delete/{id}")]
+        [Authorize(Roles = "QuanTri")] // Độc quyền Admin
         public IActionResult Delete(int id)
         {
             if (_teacherBusiness.Delete(id))

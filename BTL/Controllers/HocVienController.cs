@@ -4,11 +4,11 @@ using Model;
 using System;
 using BLL.Interfaces;
 
-namespace API_Admin.Controllers // Đổi namespace cho khớp với project
+namespace API_Admin.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "QuanTri")] // Bổ sung thẻ bảo vệ API chỉ cho Admin
+    [Authorize] // Chốt chặn vòng ngoài: Bắt buộc phải có Token đăng nhập hệ thống
     public class HocVienController : ControllerBase
     {
         private readonly IHocVienBusiness _studentBusiness;
@@ -19,6 +19,7 @@ namespace API_Admin.Controllers // Đổi namespace cho khớp với project
         }
 
         [HttpPost("create")]
+        [Authorize(Roles = "QuanTri")] // Độc quyền Admin
         public IActionResult CreateStudent([FromBody] HocVienModel model)
         {
             try
@@ -37,6 +38,7 @@ namespace API_Admin.Controllers // Đổi namespace cho khớp với project
         }
 
         [HttpPut("update")]
+        [Authorize(Roles = "QuanTri")] // Độc quyền Admin: Chỉ Admin mới được sửa hồ sơ của học viên bất kỳ
         public IActionResult UpdateStudent([FromBody] HocVienModel model)
         {
             try
@@ -50,8 +52,8 @@ namespace API_Admin.Controllers // Đổi namespace cho khớp với project
             }
         }
 
-        // Đổi studentCode thành maHocVien trên đường dẫn
         [HttpDelete("delete/{maHocVien}")]
+        [Authorize(Roles = "QuanTri")] // Độc quyền Admin
         public IActionResult DeleteStudent(string maHocVien)
         {
             try
@@ -65,8 +67,8 @@ namespace API_Admin.Controllers // Đổi namespace cho khớp với project
             }
         }
 
-        // Đổi studentCode thành maHocVien trên đường dẫn
         [HttpGet("get-by-id/{maHocVien}")]
+        [Authorize(Roles = "QuanTri,GiaoVien")] // Cả Admin và Giáo viên đều được xem chi tiết
         public IActionResult GetStudentById(string maHocVien)
         {
             try
@@ -82,7 +84,8 @@ namespace API_Admin.Controllers // Đổi namespace cho khớp với project
         }
 
         [HttpGet("search")]
-        public IActionResult SearchStudents([FromQuery] string tuKhoa = "") // Đổi keyword thành tuKhoa
+        [Authorize(Roles = "QuanTri,GiaoVien")] // Cả Admin và Giáo viên đều được tìm kiếm/tra cứu
+        public IActionResult SearchStudents([FromQuery] string tuKhoa = "")
         {
             try
             {
