@@ -10,5 +10,7 @@ namespace DAL.Interfaces
         bool Create(GhiDanhModel model);
         bool Update(GhiDanhModel model);
         bool Delete(int id);
+
+        IEnumerable<GhiDanhModel> GetByHocVienId(int hocVienId);
     }
 }

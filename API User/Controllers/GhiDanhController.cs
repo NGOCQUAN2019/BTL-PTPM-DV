@@ -3,12 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 using Model;
 using BLL.Interfaces;
 using System.Security.Claims;
+using System;
 
 namespace API_User.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "HocVien")] // Cố định toàn bộ Controller này chỉ dành riêng cho Học viên
+    [Authorize(Roles = "HocVien")]
     public class GhiDanhController : ControllerBase
     {
         private readonly IGhiDanhBusiness _ghiDanhBusiness;
@@ -18,38 +19,44 @@ namespace API_User.Controllers
             _ghiDanhBusiness = ghiDanhBusiness;
         }
 
-        // Học viên xem danh sách các phiếu ghi danh của chính mình
-        [HttpGet("get-all")]
-        public IActionResult GetAll()
-        {
-            // Tùy chọn nâng cao: Bạn có thể lấy ID học viên từ Token để lọc dữ liệu chỉ hiện của cá nhân đó
-            return Ok(_ghiDanhBusiness.GetAll());
-        }
+        // ... (các hàm Get giữ nguyên) ...
 
-        [HttpGet("get-by-id/{id}")]
-        public IActionResult GetById(int id)
-        {
-            var data = _ghiDanhBusiness.GetById(id);
-            if (data == null)
-                return NotFound(new { message = "Không tìm thấy thông tin ghi danh!" });
-            return Ok(data);
-        }
-
-        // Chức năng cốt lõi: Học viên tự bấm nút đăng ký một lớp học mới
         [HttpPost("create")]
-        public IActionResult Create([FromBody] GhiDanhModel model)
+        public IActionResult Create([FromBody] GhiDanhCreateRequest request)
         {
             try
             {
+                var model = new GhiDanhModel();
+                model.LopHocId = request.LopHocId;
+
+                // BẮT BUỘC PHẢI CÓ TOKEN HỢP LỆ MỚI CHO ĐI TIẾP
+                var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+                if (userIdClaim == null)
+                    return Unauthorized(new { message = "Token không hợp lệ hoặc thiếu thông tin ID học viên!" });
+
+                model.HocVienId = int.Parse(userIdClaim.Value);
+
+                // Chặn thêm 1 lớp an toàn: ID phải lớn hơn 0
+                if (model.HocVienId <= 0)
+                    return BadRequest(new { message = $"HocVienId ({model.HocVienId}) từ Token không hợp lệ!" });
+
+                model.TrangThai = "ChoDuyet";
+
                 if (_ghiDanhBusiness.Create(model))
                     return Ok(new { message = "Đăng ký khóa học thành công! Hệ thống đã tự động tạo hóa đơn chờ thanh toán." });
 
                 return BadRequest(new { message = "Đăng ký thất bại hoặc lớp đã đầy!" });
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(new { message = ex.Message });
             }
         }
+    }
+
+    // NÉM NÓ XUỐNG CUỐI CÙNG CỦA FILE NÀY (Bên trong namespace nhưng bên ngoài class Controller)
+    public class GhiDanhCreateRequest
+    {
+        public int LopHocId { get; set; }
     }
 }

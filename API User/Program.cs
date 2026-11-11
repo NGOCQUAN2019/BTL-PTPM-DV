@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -53,11 +53,17 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-builder.Services.AddScoped<DAL.Interfaces.IHocVienRepository, DAL.HocVienRepository>();
-builder.Services.AddScoped<BLL.Interfaces.IHocVienBusiness, BLL.HocVienBusiness>();
+builder.Services.AddScoped<DAL.Interfaces.IKhoaHocRepository, DAL.KhoaHocRepository>();
+builder.Services.AddScoped<BLL.Interfaces.IKhoaHocBusiness, BLL.KhoaHocBusiness>();
 
-builder.Services.AddScoped<DAL.Interfaces.IGiaoVienRepository, DAL.GiaoVienRepository>();
-builder.Services.AddScoped<BLL.Interfaces.IGiaoVienBusiness, BLL.GiaoVienBusiness>();
+builder.Services.AddScoped<DAL.Interfaces.IHoaDonRepository, DAL.HoaDonRepository>();
+builder.Services.AddScoped<BLL.Interfaces.IHoaDonBusiness, BLL.HoaDonBusiness>();
+
+builder.Services.AddScoped<DAL.Interfaces.IDiemSoRepository, DAL.DiemSoRepository>();
+builder.Services.AddScoped<BLL.Interfaces.IDiemSoBusiness, BLL.DiemSoBusiness>();
+
+builder.Services.AddScoped<DAL.Interfaces.ILopHocRepository, DAL.LopHocRepository>();
+builder.Services.AddScoped<BLL.Interfaces.ILopHocBusiness, BLL.LopHocBusiness>();
 
 builder.Services.AddScoped<DAL.Interfaces.IGhiDanhRepository, DAL.GhiDanhRepository>();
 builder.Services.AddScoped<BLL.Interfaces.IGhiDanhBusiness, BLL.GhiDanhBusiness>();

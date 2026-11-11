@@ -5,6 +5,7 @@ using Model;
 using DAL.Interfaces;
 using System.Collections.Generic;
 using System.Data;
+using System;
 
 namespace DAL
 {
@@ -21,8 +22,8 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                string sql = @"SELECT Id, MaHocVien, LopHocId, NgayGhiDanh, SoTienDaDong, TrangThai 
-                               FROM GhiDanh";
+                // Sửa lại đúng các cột của bảng GhiDanh
+                string sql = "SELECT Id, HocVienId, LopHocId, NgayGhiDanh, TrangThai FROM GhiDanh";
                 return db.Query<GhiDanhModel>(sql);
             }
         }
@@ -31,10 +32,18 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
-                string sql = @"SELECT Id, MaHocVien, LopHocId, NgayGhiDanh, SoTienDaDong, TrangThai 
-                               FROM GhiDanh 
-                               WHERE Id = @Id";
+                string sql = "SELECT Id, HocVienId, LopHocId, NgayGhiDanh, TrangThai FROM GhiDanh WHERE Id = @Id";
                 return db.QueryFirstOrDefault<GhiDanhModel>(sql, new { Id = id });
+            }
+        }
+
+        // --- HÀM MỚI BỔ SUNG CHO API_USER ---
+        public IEnumerable<GhiDanhModel> GetByHocVienId(int hocVienId)
+        {
+            using (IDbConnection db = new SqlConnection(_conn))
+            {
+                string sql = "SELECT Id, HocVienId, LopHocId, NgayGhiDanh, TrangThai FROM GhiDanh WHERE HocVienId = @HocVienId";
+                return db.Query<GhiDanhModel>(sql, new { HocVienId = hocVienId });
             }
         }
 
@@ -43,28 +52,29 @@ namespace DAL
             using (IDbConnection db = new SqlConnection(_conn))
             {
                 string sql = @"
-            DECLARE @hvId INT = (SELECT Id FROM HocVien WHERE MaHocVien = @MaHocVien);
+                    DECLARE @RealHocVienId INT = (SELECT Id FROM HocVien WHERE NguoiDungId = @IdTuToken);
             
-            IF @hvId IS NULL
-                THROW 50001, N'Không tìm thấy mã học viên này trong hệ thống.', 1;
-            ELSE
-                EXEC sp_GhiDanhHocVien @hvId, @LopHocId;";
+                    IF @RealHocVienId IS NULL
+                        THROW 50001, N'Không tìm thấy hồ sơ Học viên cho tài khoản này.', 1;
+            
+                    EXEC sp_GhiDanhHocVien @RealHocVienId, @LopHocId;
+                ";
+
+                var parameters = new DynamicParameters();
+                parameters.Add("@IdTuToken", model.HocVienId);
+                parameters.Add("@LopHocId", model.LopHocId);
 
                 try
                 {
-                   
-                    db.Execute(sql, model);
+                    db.Execute(sql, parameters);
                     return true;
                 }
-                catch (Microsoft.Data.SqlClient.SqlException ex)
+                catch (SqlException ex)
                 {
-                    
                     if (ex.Number == 2627)
                     {
                         throw new Exception("Học viên này đã ghi danh vào lớp học này rồi!");
                     }
-
-                 
                     throw new Exception(ex.Message);
                 }
             }
@@ -74,9 +84,10 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_conn))
             {
+                // Chỉ Update những trường có thật trong bảng GhiDanh
                 string sql = @"UPDATE GhiDanh 
-                               SET MaHocVien = @MaHocVien, LopHocId = @LopHocId, 
-                                   NgayGhiDanh = @NgayGhiDanh, SoTienDaDong = @SoTienDaDong, 
+                               SET HocVienId = @HocVienId, 
+                                   LopHocId = @LopHocId, 
                                    TrangThai = @TrangThai 
                                WHERE Id = @Id";
                 return db.Execute(sql, model) > 0;

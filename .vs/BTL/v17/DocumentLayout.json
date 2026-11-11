@@ -3,16 +3,72 @@
   "WorkspaceRootPath": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\controllers\\thongkecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\controllers\\thongkecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\dal\\ghidanhrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|solutionrelative:dal\\ghidanhrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\api user\\controllers\\ghidanhcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|solutionrelative:api user\\controllers\\ghidanhcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\api user\\controllers\\hoadoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|solutionrelative:api user\\controllers\\hoadoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB7BDB9F-FAAD-45D5-9E3F-6EB7E3D7982B}|Model\\Model.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\model\\ghidanhmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB7BDB9F-FAAD-45D5-9E3F-6EB7E3D7982B}|Model\\Model.csproj|solutionrelative:model\\ghidanhmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\api user\\controllers\\diemsocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|solutionrelative:api user\\controllers\\diemsocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\bll\\ghidanhbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|solutionrelative:bll\\ghidanhbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\dal\\interfaces\\ighidanhrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\ighidanhrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\bll\\interfaces\\ighidanhbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\ighidanhbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\controllers\\thanhtoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\controllers\\thanhtoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\dal\\khoahocrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|solutionrelative:dal\\khoahocrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\api user\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|solutionrelative:api user\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\controllers\\giaoviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\controllers\\giaoviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{452464AF-AD97-4595-8DB1-BC41CFE99C26}|API Core\\API Core.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\api core\\controllers\\xacthuccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{452464AF-AD97-4595-8DB1-BC41CFE99C26}|API Core\\API Core.csproj|solutionrelative:api core\\controllers\\xacthuccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\api user\\controllers\\lophoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|solutionrelative:api user\\controllers\\lophoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\controllers\\lophoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\controllers\\lophoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\controllers\\thongkecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\controllers\\thongkecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\controllers\\diemsocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,10 +83,6 @@
       "RelativeMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|solutionrelative:api user\\controllers\\khoahoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\api user\\controllers\\hoadoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|solutionrelative:api user\\controllers\\hoadoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\controllers\\hoadoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\controllers\\hoadoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,20 +95,8 @@
       "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\controllers\\khoahoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\controllers\\giaoviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\controllers\\giaoviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\controllers\\chungchicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\controllers\\chungchicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\api user\\controllers\\diemsocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|solutionrelative:api user\\controllers\\diemsocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\api user\\controllers\\ghidanhcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|solutionrelative:api user\\controllers\\ghidanhcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\bll\\interfaces\\ihoadonbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,10 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\bll\\hoadonbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|solutionrelative:bll\\hoadonbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{452464AF-AD97-4595-8DB1-BC41CFE99C26}|API Core\\API Core.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\api core\\controllers\\xacthuccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{452464AF-AD97-4595-8DB1-BC41CFE99C26}|API Core\\API Core.csproj|solutionrelative:api core\\controllers\\xacthuccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\dal\\hoadonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -105,10 +141,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BB7BDB9F-FAAD-45D5-9E3F-6EB7E3D7982B}|Model\\Model.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\model\\hoadonmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB7BDB9F-FAAD-45D5-9E3F-6EB7E3D7982B}|Model\\Model.csproj|solutionrelative:model\\hoadonmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\btl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26D1BE28-11CF-4792-9E5F-ABCCBC081D9B}|BTL\\API Admin.csproj|solutionrelative:btl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\bll\\thongkebusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -195,10 +227,6 @@
       "RelativeMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\ikythirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB7BDB9F-FAAD-45D5-9E3F-6EB7E3D7982B}|Model\\Model.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\model\\ghidanhmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB7BDB9F-FAAD-45D5-9E3F-6EB7E3D7982B}|Model\\Model.csproj|solutionrelative:model\\ghidanhmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB7BDB9F-FAAD-45D5-9E3F-6EB7E3D7982B}|Model\\Model.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\model\\giaovienmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB7BDB9F-FAAD-45D5-9E3F-6EB7E3D7982B}|Model\\Model.csproj|solutionrelative:model\\giaovienmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -223,24 +251,8 @@
       "RelativeMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|solutionrelative:dal\\giaovienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\dal\\ghidanhrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|solutionrelative:dal\\ghidanhrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\bll\\ghidanhbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|solutionrelative:bll\\ghidanhbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\bll\\giaovienbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|solutionrelative:bll\\giaovienbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\dal\\interfaces\\ighidanhrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\ighidanhrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\bll\\interfaces\\ighidanhbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\ighidanhbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\api user\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -249,10 +261,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{452464AF-AD97-4595-8DB1-BC41CFE99C26}|API Core\\API Core.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\api core\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{452464AF-AD97-4595-8DB1-BC41CFE99C26}|API Core\\API Core.csproj|solutionrelative:api core\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\api user\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{206AF1F0-72FC-4404-A66D-F70C566B78CC}|API User\\API User.csproj|solutionrelative:api user\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A232A7B-830E-403D-AC37-727A8084B293}|BLL\\BLL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\bll\\lophocbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -277,10 +285,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\dal\\lophocrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|solutionrelative:dal\\lophocrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\dal\\khoahocrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|solutionrelative:dal\\khoahocrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A03F567A-1548-4F49-A8F4-FD8132A11DEF}|DAL\\DAL.csproj|d:\\ptpm - dv\\btl\\btl-ptpm-dv\\dal\\nguoidungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -358,47 +362,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ThanhToanController.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\ThanhToanController.cs",
-              "RelativeDocumentMoniker": "BTL\\Controllers\\ThanhToanController.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\ThanhToanController.cs*",
-              "RelativeToolTip": "BTL\\Controllers\\ThanhToanController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T08:33:56.462Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "KyThiController.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\KyThiController.cs",
-              "RelativeDocumentMoniker": "BTL\\Controllers\\KyThiController.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\KyThiController.cs*",
-              "RelativeToolTip": "BTL\\Controllers\\KyThiController.cs*",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAqwF0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T08:17:00.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HoaDonController.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\HoaDonController.cs",
-              "RelativeDocumentMoniker": "BTL\\Controllers\\HoaDonController.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\HoaDonController.cs*",
-              "RelativeToolTip": "BTL\\Controllers\\HoaDonController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T08:01:50.909Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -417,116 +382,77 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "KhoaHocController.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\KhoaHocController.cs",
-              "RelativeDocumentMoniker": "API User\\Controllers\\KhoaHocController.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\KhoaHocController.cs*",
-              "RelativeToolTip": "API User\\Controllers\\KhoaHocController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAkwA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "GhiDanhController.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\GhiDanhController.cs",
+              "RelativeDocumentMoniker": "API User\\Controllers\\GhiDanhController.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\GhiDanhController.cs",
+              "RelativeToolTip": "API User\\Controllers\\GhiDanhController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwDUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-07T16:26:01.57Z",
+              "WhenOpened": "2026-11-07T16:26:43.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LopHocController.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\LopHocController.cs",
-              "RelativeDocumentMoniker": "BTL\\Controllers\\LopHocController.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\LopHocController.cs*",
-              "RelativeToolTip": "BTL\\Controllers\\LopHocController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAABAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "IGhiDanhRepository.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IGhiDanhRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IGhiDanhRepository.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IGhiDanhRepository.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IGhiDanhRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-07T08:30:11.566Z",
+              "WhenOpened": "2026-10-08T02:35:28.455Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ThongKeController.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\ThongKeController.cs",
-              "RelativeDocumentMoniker": "BTL\\Controllers\\ThongKeController.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\ThongKeController.cs*",
-              "RelativeToolTip": "BTL\\Controllers\\ThongKeController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Title": "GhiDanhRepository.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\GhiDanhRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\GhiDanhRepository.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\GhiDanhRepository.cs",
+              "RelativeToolTip": "DAL\\GhiDanhRepository.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwD4AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-08T02:18:01.315Z",
+              "WhenOpened": "2026-10-08T02:34:49.646Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HocVienController.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\HocVienController.cs",
-              "RelativeDocumentMoniker": "BTL\\Controllers\\HocVienController.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\HocVienController.cs*",
-              "RelativeToolTip": "BTL\\Controllers\\HocVienController.cs*",
-              "ViewState": "AgIAACUAAAAAAAAAAAAUwGQAAAABAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "GhiDanhModel.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\GhiDanhModel.cs",
+              "RelativeDocumentMoniker": "Model\\GhiDanhModel.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\GhiDanhModel.cs",
+              "RelativeToolTip": "Model\\GhiDanhModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-22T01:38:50.439Z",
+              "WhenOpened": "2026-10-08T02:33:20.327Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DiemSoController.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\DiemSoController.cs",
-              "RelativeDocumentMoniker": "BTL\\Controllers\\DiemSoController.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\DiemSoController.cs*",
-              "RelativeToolTip": "BTL\\Controllers\\DiemSoController.cs*",
-              "ViewState": "AgIAACwAAAAAAAAAAAA2wGAAAAABAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Program.cs",
+              "RelativeDocumentMoniker": "BTL\\Program.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Program.cs",
+              "RelativeToolTip": "BTL\\Program.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAD4v3AAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T06:53:56.967Z",
+              "WhenOpened": "2026-09-22T02:27:40.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "KhoaHocController.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\KhoaHocController.cs",
-              "RelativeDocumentMoniker": "BTL\\Controllers\\KhoaHocController.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\KhoaHocController.cs*",
-              "RelativeToolTip": "BTL\\Controllers\\KhoaHocController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T08:08:51.263Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GiaoVienController.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\GiaoVienController.cs",
-              "RelativeDocumentMoniker": "BTL\\Controllers\\GiaoVienController.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\GiaoVienController.cs*",
-              "RelativeToolTip": "BTL\\Controllers\\GiaoVienController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-02T15:22:52.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HoaDonController.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\HoaDonController.cs",
-              "RelativeDocumentMoniker": "API User\\Controllers\\HoaDonController.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\HoaDonController.cs*",
-              "RelativeToolTip": "API User\\Controllers\\HoaDonController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-07T16:27:52.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
               "Title": "DiemSoController.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\DiemSoController.cs",
               "RelativeDocumentMoniker": "API User\\Controllers\\DiemSoController.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\DiemSoController.cs*",
-              "RelativeToolTip": "API User\\Controllers\\DiemSoController.cs*",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\DiemSoController.cs",
+              "RelativeToolTip": "API User\\Controllers\\DiemSoController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-07T16:27:46.693Z",
@@ -534,20 +460,216 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GhiDanhController.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\GhiDanhController.cs",
-              "RelativeDocumentMoniker": "API User\\Controllers\\GhiDanhController.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\GhiDanhController.cs*",
-              "RelativeToolTip": "API User\\Controllers\\GhiDanhController.cs*",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAuwDYAAAABAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "HoaDonController.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\HoaDonController.cs",
+              "RelativeDocumentMoniker": "API User\\Controllers\\HoaDonController.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\HoaDonController.cs",
+              "RelativeToolTip": "API User\\Controllers\\HoaDonController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-07T16:26:43.209Z",
+              "WhenOpened": "2026-11-07T16:27:52.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GhiDanhBusiness.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\GhiDanhBusiness.cs",
+              "RelativeDocumentMoniker": "BLL\\GhiDanhBusiness.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\GhiDanhBusiness.cs",
+              "RelativeToolTip": "BLL\\GhiDanhBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T02:37:59.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IGhiDanhBusiness.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IGhiDanhBusiness.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\IGhiDanhBusiness.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IGhiDanhBusiness.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\IGhiDanhBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T02:38:57.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ThanhToanController.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\ThanhToanController.cs",
+              "RelativeDocumentMoniker": "BTL\\Controllers\\ThanhToanController.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\ThanhToanController.cs",
+              "RelativeToolTip": "BTL\\Controllers\\ThanhToanController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAIwE0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T08:33:56.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "KhoaHocRepository.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\KhoaHocRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\KhoaHocRepository.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\KhoaHocRepository.cs",
+              "RelativeToolTip": "DAL\\KhoaHocRepository.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAD4vzAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T16:26:30.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GiaoVienController.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\GiaoVienController.cs",
+              "RelativeDocumentMoniker": "BTL\\Controllers\\GiaoVienController.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\GiaoVienController.cs",
+              "RelativeToolTip": "BTL\\Controllers\\GiaoVienController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAswDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T15:22:52.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "XacThucController.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API Core\\Controllers\\XacThucController.cs",
+              "RelativeDocumentMoniker": "API Core\\Controllers\\XacThucController.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API Core\\Controllers\\XacThucController.cs",
+              "RelativeToolTip": "API Core\\Controllers\\XacThucController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAACEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T03:41:25.203Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Program.cs",
+              "RelativeDocumentMoniker": "API User\\Program.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Program.cs",
+              "RelativeToolTip": "API User\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T15:14:28.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ThongKeController.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\ThongKeController.cs",
+              "RelativeDocumentMoniker": "BTL\\Controllers\\ThongKeController.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\ThongKeController.cs",
+              "RelativeToolTip": "BTL\\Controllers\\ThongKeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T02:18:01.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LopHocController.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\LopHocController.cs",
+              "RelativeDocumentMoniker": "BTL\\Controllers\\LopHocController.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\LopHocController.cs",
+              "RelativeToolTip": "BTL\\Controllers\\LopHocController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T08:30:11.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "KhoaHocController.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\KhoaHocController.cs",
+              "RelativeDocumentMoniker": "API User\\Controllers\\KhoaHocController.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\KhoaHocController.cs",
+              "RelativeToolTip": "API User\\Controllers\\KhoaHocController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAkwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T16:26:01.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LopHocController.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\LopHocController.cs",
+              "RelativeDocumentMoniker": "API User\\Controllers\\LopHocController.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Controllers\\LopHocController.cs",
+              "RelativeToolTip": "API User\\Controllers\\LopHocController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T13:23:13.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "HoaDonController.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\HoaDonController.cs",
+              "RelativeDocumentMoniker": "BTL\\Controllers\\HoaDonController.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\HoaDonController.cs",
+              "RelativeToolTip": "BTL\\Controllers\\HoaDonController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T08:01:50.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "KyThiController.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\KyThiController.cs",
+              "RelativeDocumentMoniker": "BTL\\Controllers\\KyThiController.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\KyThiController.cs",
+              "RelativeToolTip": "BTL\\Controllers\\KyThiController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAqwF0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T08:17:00.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "HocVienController.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\HocVienController.cs",
+              "RelativeDocumentMoniker": "BTL\\Controllers\\HocVienController.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\HocVienController.cs",
+              "RelativeToolTip": "BTL\\Controllers\\HocVienController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAUwGQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T01:38:50.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DiemSoController.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\DiemSoController.cs",
+              "RelativeDocumentMoniker": "BTL\\Controllers\\DiemSoController.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\DiemSoController.cs",
+              "RelativeToolTip": "BTL\\Controllers\\DiemSoController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAA2wGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T06:53:56.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "KhoaHocController.cs",
+              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\KhoaHocController.cs",
+              "RelativeDocumentMoniker": "BTL\\Controllers\\KhoaHocController.cs",
+              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\KhoaHocController.cs",
+              "RelativeToolTip": "BTL\\Controllers\\KhoaHocController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T08:08:51.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "ChungChiController.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Controllers\\ChungChiController.cs",
               "RelativeDocumentMoniker": "BTL\\Controllers\\ChungChiController.cs",
@@ -555,12 +677,11 @@
               "RelativeToolTip": "BTL\\Controllers\\ChungChiController.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAwwD0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-06T17:03:27.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-06T17:03:27.138Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 24,
               "Title": "IHoaDonBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IHoaDonBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\IHoaDonBusiness.cs",
@@ -568,12 +689,11 @@
               "RelativeToolTip": "BLL\\Interfaces\\IHoaDonBusiness.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-08T02:38:27.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-08T02:38:27.394Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 25,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API Core\\Program.cs",
               "RelativeDocumentMoniker": "API Core\\Program.cs",
@@ -581,12 +701,11 @@
               "RelativeToolTip": "API Core\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-08T03:45:20.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-08T03:45:20.983Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 26,
               "Title": "ThanhToanBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\ThanhToanBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\ThanhToanBusiness.cs",
@@ -598,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 27,
               "Title": "HoaDonBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\HoaDonBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\HoaDonBusiness.cs",
@@ -610,19 +729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "XacThucController.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API Core\\Controllers\\XacThucController.cs",
-              "RelativeDocumentMoniker": "API Core\\Controllers\\XacThucController.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API Core\\Controllers\\XacThucController.cs",
-              "RelativeToolTip": "API Core\\Controllers\\XacThucController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-08T03:41:25.203Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 28,
               "Title": "HoaDonRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\HoaDonRepository.cs",
               "RelativeDocumentMoniker": "DAL\\HoaDonRepository.cs",
@@ -634,7 +741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 29,
               "Title": "IHoaDonRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IHoaDonRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interfaces\\IHoaDonRepository.cs",
@@ -646,7 +753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 30,
               "Title": "IThanhToanBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IThanhToanBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\IThanhToanBusiness.cs",
@@ -658,7 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 31,
               "Title": "IThanhToanRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IThanhToanRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interfaces\\IThanhToanRepository.cs",
@@ -670,7 +777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 32,
               "Title": "ThanhToanRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\ThanhToanRepository.cs",
               "RelativeDocumentMoniker": "DAL\\ThanhToanRepository.cs",
@@ -682,7 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 33,
               "Title": "ThanhToanModel.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\ThanhToanModel.cs",
               "RelativeDocumentMoniker": "Model\\ThanhToanModel.cs",
@@ -694,7 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 34,
               "Title": "HoaDonModel.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\HoaDonModel.cs",
               "RelativeDocumentMoniker": "Model\\HoaDonModel.cs",
@@ -706,19 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Program.cs",
-              "RelativeDocumentMoniker": "BTL\\Program.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\Program.cs",
-              "RelativeToolTip": "BTL\\Program.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAcwFwAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-22T02:27:40.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 39,
               "Title": "ThongKeModel.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\ThongKeModel.cs",
               "RelativeDocumentMoniker": "Model\\ThongKeModel.cs",
@@ -730,7 +825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 35,
               "Title": "ThongKeBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\ThongKeBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\ThongKeBusiness.cs",
@@ -742,7 +837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 36,
               "Title": "IThongKeBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IThongKeBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\IThongKeBusiness.cs",
@@ -754,7 +849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 37,
               "Title": "ThongKeRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\ThongKeRepository.cs",
               "RelativeDocumentMoniker": "DAL\\ThongKeRepository.cs",
@@ -766,7 +861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 38,
               "Title": "IThongKeRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IThongKeRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interfaces\\IThongKeRepository.cs",
@@ -778,7 +873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 40,
               "Title": "ChungChiModel.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\ChungChiModel.cs",
               "RelativeDocumentMoniker": "Model\\ChungChiModel.cs",
@@ -790,7 +885,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 41,
               "Title": "AuthenticateModel.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\AuthenticateModel.cs",
               "RelativeDocumentMoniker": "Model\\AuthenticateModel.cs",
@@ -802,7 +897,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 42,
               "Title": "DiemSoModel.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\DiemSoModel.cs",
               "RelativeDocumentMoniker": "Model\\DiemSoModel.cs",
@@ -814,7 +909,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 46,
               "Title": "IChungChiRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IChungChiRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interfaces\\IChungChiRepository.cs",
@@ -826,7 +921,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 44,
               "Title": "IChungChiBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IChungChiBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\IChungChiBusiness.cs",
@@ -838,7 +933,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 43,
               "Title": "ChungChiBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\ChungChiBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\ChungChiBusiness.cs",
@@ -850,7 +945,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 45,
               "Title": "ChungChiRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\ChungChiRepository.cs",
               "RelativeDocumentMoniker": "DAL\\ChungChiRepository.cs",
@@ -862,7 +957,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 47,
               "Title": "DiemSoBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\DiemSoBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\DiemSoBusiness.cs",
@@ -874,7 +969,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 48,
               "Title": "IDiemSoBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IDiemSoBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\IDiemSoBusiness.cs",
@@ -886,7 +981,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 49,
               "Title": "DiemSoRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\DiemSoRepository.cs",
               "RelativeDocumentMoniker": "DAL\\DiemSoRepository.cs",
@@ -898,7 +993,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 51,
               "Title": "KyThiRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\KyThiRepository.cs",
               "RelativeDocumentMoniker": "DAL\\KyThiRepository.cs",
@@ -910,7 +1005,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 50,
               "Title": "IDiemSoRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IDiemSoRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interfaces\\IDiemSoRepository.cs",
@@ -922,7 +1017,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 53,
               "Title": "KyThiBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\KyThiBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\KyThiBusiness.cs",
@@ -934,7 +1029,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 54,
               "Title": "IKyThiBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IKyThiBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\IKyThiBusiness.cs",
@@ -946,7 +1041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 55,
               "Title": "IKyThiRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IKyThiRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interfaces\\IKyThiRepository.cs",
@@ -958,7 +1053,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 52,
               "Title": "KyThiModel.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\KyThiModel.cs",
               "RelativeDocumentMoniker": "Model\\KyThiModel.cs",
@@ -970,19 +1065,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "GhiDanhModel.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\GhiDanhModel.cs",
-              "RelativeDocumentMoniker": "Model\\GhiDanhModel.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\GhiDanhModel.cs",
-              "RelativeToolTip": "Model\\GhiDanhModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-08T02:33:20.327Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 56,
               "Title": "GiaoVienModel.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\GiaoVienModel.cs",
               "RelativeDocumentMoniker": "Model\\GiaoVienModel.cs",
@@ -994,7 +1077,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 57,
               "Title": "HocVienModel.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\HocVienModel.cs",
               "RelativeDocumentMoniker": "Model\\HocVienModel.cs",
@@ -1006,7 +1089,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 58,
               "Title": "KhoaHocModel.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\KhoaHocModel.cs",
               "RelativeDocumentMoniker": "Model\\KhoaHocModel.cs",
@@ -1018,7 +1101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 59,
               "Title": "LopHocModel.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\LopHocModel.cs",
               "RelativeDocumentMoniker": "Model\\LopHocModel.cs",
@@ -1030,7 +1113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 60,
               "Title": "NguoiDungModel.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\NguoiDungModel.cs",
               "RelativeDocumentMoniker": "Model\\NguoiDungModel.cs",
@@ -1042,7 +1125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 61,
               "Title": "GiaoVienRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\GiaoVienRepository.cs",
               "RelativeDocumentMoniker": "DAL\\GiaoVienRepository.cs",
@@ -1054,7 +1137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 62,
               "Title": "GiaoVienBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\GiaoVienBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\GiaoVienBusiness.cs",
@@ -1066,43 +1149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "GhiDanhBusiness.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\GhiDanhBusiness.cs",
-              "RelativeDocumentMoniker": "BLL\\GhiDanhBusiness.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\GhiDanhBusiness.cs",
-              "RelativeToolTip": "BLL\\GhiDanhBusiness.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAD4vxIAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-08T02:37:59.524Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "IGhiDanhRepository.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IGhiDanhRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\Interfaces\\IGhiDanhRepository.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IGhiDanhRepository.cs",
-              "RelativeToolTip": "DAL\\Interfaces\\IGhiDanhRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-08T02:35:28.455Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "GhiDanhRepository.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\GhiDanhRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\GhiDanhRepository.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\GhiDanhRepository.cs",
-              "RelativeToolTip": "DAL\\GhiDanhRepository.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwD8AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-08T02:34:49.646Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 64,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API Core\\appsettings.json",
               "RelativeDocumentMoniker": "API Core\\appsettings.json",
@@ -1114,31 +1161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "IGhiDanhBusiness.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IGhiDanhBusiness.cs",
-              "RelativeDocumentMoniker": "BLL\\Interfaces\\IGhiDanhBusiness.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IGhiDanhBusiness.cs",
-              "RelativeToolTip": "BLL\\Interfaces\\IGhiDanhBusiness.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-08T02:38:57.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Program.cs",
-              "RelativeDocumentMoniker": "API User\\Program.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\Program.cs",
-              "RelativeToolTip": "API User\\Program.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwD4AAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-04T15:14:28.511Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 63,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\API User\\appsettings.json",
               "RelativeDocumentMoniker": "API User\\appsettings.json",
@@ -1150,7 +1173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 65,
               "Title": "LopHocBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\LopHocBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\LopHocBusiness.cs",
@@ -1162,7 +1185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 66,
               "Title": "IGiaoVienRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IGiaoVienRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interfaces\\IGiaoVienRepository.cs",
@@ -1174,7 +1197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 67,
               "Title": "IHocVienBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IHocVienBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\IHocVienBusiness.cs",
@@ -1186,7 +1209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 68,
               "Title": "IHocVienRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IHocVienRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interfaces\\IHocVienRepository.cs",
@@ -1198,7 +1221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 69,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\appsettings.json",
               "RelativeDocumentMoniker": "BTL\\appsettings.json",
@@ -1210,7 +1233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 70,
               "Title": "LopHocRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\LopHocRepository.cs",
               "RelativeDocumentMoniker": "DAL\\LopHocRepository.cs",
@@ -1222,19 +1245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "KhoaHocRepository.cs",
-              "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\KhoaHocRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\KhoaHocRepository.cs",
-              "ToolTip": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\KhoaHocRepository.cs",
-              "RelativeToolTip": "DAL\\KhoaHocRepository.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAcwEoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T16:26:30.812Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 71,
               "Title": "NguoiDungRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\NguoiDungRepository.cs",
               "RelativeDocumentMoniker": "DAL\\NguoiDungRepository.cs",
@@ -1246,7 +1257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 72,
               "Title": "API Admin.csproj",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BTL\\API Admin.csproj",
               "RelativeDocumentMoniker": "BTL\\API Admin.csproj",
@@ -1258,7 +1269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 73,
               "Title": "ILopHocRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\ILopHocRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interfaces\\ILopHocRepository.cs",
@@ -1270,7 +1281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 74,
               "Title": "IKhoaHocBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IKhoaHocBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\IKhoaHocBusiness.cs",
@@ -1282,7 +1293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 75,
               "Title": "KhoaHocBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\KhoaHocBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\KhoaHocBusiness.cs",
@@ -1294,7 +1305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 76,
               "Title": "IKhoaHocRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\IKhoaHocRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interfaces\\IKhoaHocRepository.cs",
@@ -1306,7 +1317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 77,
               "Title": "HocVienBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\HocVienBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\HocVienBusiness.cs",
@@ -1318,7 +1329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 78,
               "Title": "INguoiDungBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\INguoiDungBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\INguoiDungBusiness.cs",
@@ -1330,7 +1341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 79,
               "Title": "ILopHocBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\ILopHocBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\ILopHocBusiness.cs",
@@ -1342,7 +1353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 80,
               "Title": "IGiaoVienBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\Interfaces\\IGiaoVienBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\IGiaoVienBusiness.cs",
@@ -1354,7 +1365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 81,
               "Title": "HocVienRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\HocVienRepository.cs",
               "RelativeDocumentMoniker": "DAL\\HocVienRepository.cs",
@@ -1366,7 +1377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 84,
               "Title": "BLL.csproj",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\BLL.csproj",
               "RelativeDocumentMoniker": "BLL\\BLL.csproj",
@@ -1378,7 +1389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 83,
               "Title": "DAL.csproj",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\DAL.csproj",
               "RelativeDocumentMoniker": "DAL\\DAL.csproj",
@@ -1390,7 +1401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 82,
               "Title": "Model.csproj",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\Model\\Model.csproj",
               "RelativeDocumentMoniker": "Model\\Model.csproj",
@@ -1402,7 +1413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 85,
               "Title": "NguoiDungBusiness.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\BLL\\NguoiDungBusiness.cs",
               "RelativeDocumentMoniker": "BLL\\NguoiDungBusiness.cs",
@@ -1414,7 +1425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 86,
               "Title": "INguoiDungRepository.cs",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\DAL\\Interfaces\\INguoiDungRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interfaces\\INguoiDungRepository.cs",
@@ -1426,7 +1437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 87,
               "Title": ".gitignore",
               "DocumentMoniker": "D:\\PTPM - DV\\BTL\\BTL-PTPM-DV\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",

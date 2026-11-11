@@ -19,5 +19,7 @@ namespace BLL
         public bool Create(GhiDanhModel model) => _repo.Create(model);
         public bool Update(GhiDanhModel model) => _repo.Update(model);
         public bool Delete(int id) => _repo.Delete(id);
+
+        public IEnumerable<GhiDanhModel> GetByHocVienId(int hocVienId) => _repo.GetByHocVienId(hocVienId);
     }
 }
