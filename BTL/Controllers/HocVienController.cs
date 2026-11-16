@@ -6,9 +6,10 @@ using BLL.Interfaces;
 
 namespace API_Admin.Controllers
 {
-    [Route("api/[controller]")]
+    // SỬA 1: Đổi thành admin-api cho khớp với Frontend
+    [Route("admin-api/[controller]")]
     [ApiController]
-    [Authorize] // Chốt chặn vòng ngoài: Bắt buộc phải có Token đăng nhập hệ thống
+    [Authorize]
     public class HocVienController : ControllerBase
     {
         private readonly IHocVienBusiness _studentBusiness;
@@ -18,18 +19,32 @@ namespace API_Admin.Controllers
             _studentBusiness = studentBusiness;
         }
 
+        // SỬA 2: Thêm hàm get-all để Frontend tải danh sách lên bảng
+        [HttpGet("get-all")]
+        [Authorize(Roles = "QuanTri,GiaoVien")]
+        public IActionResult GetAllHocVien()
+        {
+            try
+            {
+                // Dùng luôn hàm Search với từ khóa rỗng để lấy tất cả
+                var data = _studentBusiness.SearchStudents("");
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { statusCode = 400, message = ex.Message });
+            }
+        }
+
         [HttpPost("create")]
-        [Authorize(Roles = "QuanTri")] // Độc quyền Admin
+        [Authorize(Roles = "QuanTri")]
         public IActionResult CreateStudent([FromBody] HocVienModel model)
         {
             try
             {
                 bool result = _studentBusiness.CreateStudent(model);
-                if (result)
-                {
-                    return Ok(new { statusCode = 200, message = "Thêm học viên và tạo tài khoản thành công!" });
-                }
-                return BadRequest(new { statusCode = 400, message = "Thêm học viên thất bại!" });
+                if (result) return Ok(new { statusCode = 200, message = "Thêm thành công!" });
+                return BadRequest(new { statusCode = 400, message = "Thêm thất bại!" });
             }
             catch (Exception ex)
             {
@@ -38,7 +53,7 @@ namespace API_Admin.Controllers
         }
 
         [HttpPut("update")]
-        [Authorize(Roles = "QuanTri")] // Độc quyền Admin: Chỉ Admin mới được sửa hồ sơ của học viên bất kỳ
+        [Authorize(Roles = "QuanTri")]
         public IActionResult UpdateStudent([FromBody] HocVienModel model)
         {
             try
@@ -52,8 +67,9 @@ namespace API_Admin.Controllers
             }
         }
 
+        // Đã giữ nguyên dùng maHocVien (chữ) theo thiết kế của bạn
         [HttpDelete("delete/{maHocVien}")]
-        [Authorize(Roles = "QuanTri")] // Độc quyền Admin
+        [Authorize(Roles = "QuanTri")]
         public IActionResult DeleteStudent(string maHocVien)
         {
             try
@@ -67,8 +83,9 @@ namespace API_Admin.Controllers
             }
         }
 
+        // Đã giữ nguyên dùng maHocVien (chữ) theo thiết kế của bạn
         [HttpGet("get-by-id/{maHocVien}")]
-        [Authorize(Roles = "QuanTri,GiaoVien")] // Cả Admin và Giáo viên đều được xem chi tiết
+        [Authorize(Roles = "QuanTri,GiaoVien")]
         public IActionResult GetStudentById(string maHocVien)
         {
             try
@@ -84,7 +101,7 @@ namespace API_Admin.Controllers
         }
 
         [HttpGet("search")]
-        [Authorize(Roles = "QuanTri,GiaoVien")] // Cả Admin và Giáo viên đều được tìm kiếm/tra cứu
+        [Authorize(Roles = "QuanTri,GiaoVien")]
         public IActionResult SearchStudents([FromQuery] string tuKhoa = "")
         {
             try
