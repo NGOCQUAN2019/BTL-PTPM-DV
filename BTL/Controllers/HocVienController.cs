@@ -7,7 +7,7 @@ using BLL.Interfaces;
 namespace API_Admin.Controllers
 {
     // SỬA 1: Đổi thành admin-api cho khớp với Frontend
-    [Route("admin-api/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     [Authorize]
     public class HocVienController : ControllerBase

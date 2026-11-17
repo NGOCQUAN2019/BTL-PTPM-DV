@@ -22,13 +22,15 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
-                // Khớp tham số với @p_MaHocVien, @p_HoTen... trong Procedure sp_ThemHocVien
                 var parameters = new
                 {
                     p_MaHocVien = model.MaHocVien,
                     p_HoTen = model.HoTen,
                     p_Email = model.Email,
-                    p_GioiTinh = model.GioiTinh // Bổ sung giới tính
+                    p_GioiTinh = model.GioiTinh,
+                    // Bổ sung 2 trường mới:
+                    p_NgaySinh = model.NgaySinh,
+                    p_SoDienThoai = model.SoDienThoai
                 };
                 db.Execute("sp_ThemHocVien", parameters, commandType: CommandType.StoredProcedure);
                 return true;
@@ -43,7 +45,11 @@ namespace DAL
                 {
                     p_MaHocVien = model.MaHocVien,
                     p_HoTen = model.HoTen,
-                    p_Email = model.Email
+                    p_Email = model.Email,
+                    p_GioiTinh = model.GioiTinh, // Bổ sung giới tính luôn nếu form có cập nhật
+                    // Bổ sung 2 trường mới:
+                    p_NgaySinh = model.NgaySinh,
+                    p_SoDienThoai = model.SoDienThoai
                 };
                 db.Execute("sp_CapNhatHocVien", parameters, commandType: CommandType.StoredProcedure);
                 return true;
@@ -54,7 +60,6 @@ namespace DAL
         {
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
-                // Dùng lệnh SQL trực tiếp để xóa sạch cả Học Viên và Tài Khoản liên kết
                 string sql = @"
                     DECLARE @userId INT;
                     SELECT @userId = NguoiDungId FROM HocVien WHERE MaHocVien = @MaHocVien;

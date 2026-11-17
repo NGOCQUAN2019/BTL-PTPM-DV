@@ -1,95 +1,5 @@
 [
   {
-    "ContainingType": "API_Admin.Controllers.HocVienController",
-    "Method": "CreateStudent",
-    "RelativePath": "admin-api/HocVien/create",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "Model.HocVienModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_Admin.Controllers.HocVienController",
-    "Method": "DeleteStudent",
-    "RelativePath": "admin-api/HocVien/delete/{maHocVien}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "maHocVien",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_Admin.Controllers.HocVienController",
-    "Method": "GetAllHocVien",
-    "RelativePath": "admin-api/HocVien/get-all",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_Admin.Controllers.HocVienController",
-    "Method": "GetStudentById",
-    "RelativePath": "admin-api/HocVien/get-by-id/{maHocVien}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "maHocVien",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_Admin.Controllers.HocVienController",
-    "Method": "SearchStudents",
-    "RelativePath": "admin-api/HocVien/search",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "tuKhoa",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_Admin.Controllers.HocVienController",
-    "Method": "UpdateStudent",
-    "RelativePath": "admin-api/HocVien/update",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "Model.HocVienModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "APIAdmin.Controllers.ChungChiController",
     "Method": "CapChungChi",
     "RelativePath": "api/ChungChi/cap-chung-chi/{ghiDanhId}",
@@ -348,6 +258,96 @@
       {
         "Name": "model",
         "Type": "Model.HoaDonModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.HocVienController",
+    "Method": "CreateStudent",
+    "RelativePath": "api/HocVien/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Model.HocVienModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.HocVienController",
+    "Method": "DeleteStudent",
+    "RelativePath": "api/HocVien/delete/{maHocVien}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maHocVien",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.HocVienController",
+    "Method": "GetAllHocVien",
+    "RelativePath": "api/HocVien/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.HocVienController",
+    "Method": "GetStudentById",
+    "RelativePath": "api/HocVien/get-by-id/{maHocVien}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maHocVien",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.HocVienController",
+    "Method": "SearchStudents",
+    "RelativePath": "api/HocVien/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tuKhoa",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Admin.Controllers.HocVienController",
+    "Method": "UpdateStudent",
+    "RelativePath": "api/HocVien/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Model.HocVienModel",
         "IsRequired": true
       }
     ],
@@ -625,48 +625,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Ocelot.Configuration.FileConfigurationController",
-    "Method": "Get",
-    "RelativePath": "configuration",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Ocelot.Configuration.FileConfigurationController",
-    "Method": "Post",
-    "RelativePath": "configuration",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "fileConfiguration",
-        "Type": "Ocelot.Configuration.File.FileConfiguration",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Ocelot.Cache.OutputCacheController",
-    "Method": "Delete",
-    "RelativePath": "outputcache/{region}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "region",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
     "ReturnTypes": []
   }
 ]
